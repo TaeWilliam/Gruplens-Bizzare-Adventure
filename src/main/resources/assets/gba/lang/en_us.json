@@ -2,5 +2,8 @@
   "item.gba.small_bullet": "Small Bullet",
   "item.gba.burning_bullet": "Burning Bullet",
   "item.gba.warm_glock": "Warm Glock",
+  "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
+  "advancements.age_of_fire.title": "Age Of Fire",
+  "item.gba.engi_glock": "Engi Glock",
   "item.gba.glock": "Glock"
 }

@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.mcreator.gba.item.WarmGlockItem;
 import net.mcreator.gba.item.SmallBulletItem;
 import net.mcreator.gba.item.GlockItem;
+import net.mcreator.gba.item.EngiGlockItem;
 import net.mcreator.gba.item.BurningBulletItem;
 import net.mcreator.gba.GbaMod;
 
@@ -22,4 +23,5 @@ public class GbaModItems {
 	public static final RegistryObject<Item> GLOCK = REGISTRY.register("glock", () -> new GlockItem());
 	public static final RegistryObject<Item> BURNING_BULLET = REGISTRY.register("burning_bullet", () -> new BurningBulletItem());
 	public static final RegistryObject<Item> WARM_GLOCK = REGISTRY.register("warm_glock", () -> new WarmGlockItem());
+	public static final RegistryObject<Item> ENGI_GLOCK = REGISTRY.register("engi_glock", () -> new EngiGlockItem());
 }

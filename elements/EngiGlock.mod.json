@@ -1,0 +1,47 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "notexture",
+    "customModelName": "Normal",
+    "name": "Engi Glock",
+    "specialInfo": [
+      "Du fandt Engis hemmelige opskrift på hvordan Jesu glock rigtigt skal craftes. Desværre er det at for scuffed til jeg vil adde det",
+      "så istedet får i det her",
+      "9mm rounds"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:SmallBullet"
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "entity.player.big_fall"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "EngiGlockRangedItemUsed"
+    },
+    "bulletPower": 5.0,
+    "bulletDamage": 0.30000000000000004,
+    "bulletKnockback": 5,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.STAINED_HARDENED_CLAY#10"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "EngiGlockProjectileHitsLivingEntity"
+    }
+  }
+}

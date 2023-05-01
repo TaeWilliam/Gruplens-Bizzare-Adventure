@@ -12,8 +12,7 @@
           "src/main/java/net/mcreator/gba/item/SmallBulletItem.java",
           "src/main/resources/assets/gba/models/item/small_bullet.json"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "SmallBulletRecipie",
@@ -26,8 +25,7 @@
         "files": [
           "src/main/resources/data/gba/recipes/small_bullet_recipie.json"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "Glock",
@@ -42,8 +40,7 @@
           "src/main/java/net/mcreator/gba/entity/GlockEntity.java",
           "src/main/java/net/mcreator/gba/item/GlockItem.java"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "BurningBullet",
@@ -57,8 +54,7 @@
           "src/main/resources/assets/gba/models/item/burning_bullet.json",
           "src/main/java/net/mcreator/gba/item/BurningBulletItem.java"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "Burningbulletrecipie1",
@@ -71,8 +67,7 @@
         "files": [
           "src/main/resources/data/gba/recipes/burningbulletrecipie_1.json"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "WarmGlock",
@@ -87,8 +82,7 @@
           "src/main/resources/assets/gba/models/item/warm_glock.json",
           "src/main/java/net/mcreator/gba/item/WarmGlockItem.java"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "WarmGlockRecipie",
@@ -101,8 +95,7 @@
         "files": [
           "src/main/resources/data/gba/recipes/warm_glock_recipie.json"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "AgeOfFire",
@@ -114,13 +107,11 @@
         "files": [
           "src/main/resources/data/gba/advancements/age_of_fire.json"
         ]
-      },
-      "path": "~/Glocks"
+      }
     },
     {
       "name": "EngiGlockRangedItemUsed",
       "type": "procedure",
-      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "engi_glock_ranged_item_used",
@@ -138,62 +129,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/Glocks"
-    },
-    {
-      "name": "EngiGlockProjectileHitsLivingEntity",
-      "type": "procedure",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "engi_glock_projectile_hits_living_entity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gba/procedures/EngiGlockProjectileHitsLivingEntityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Glocks"
-    },
-    {
-      "name": "EngiGlock",
-      "type": "rangeditem",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "engi_glock",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/gba/item/EngiGlockItem.java",
-          "src/main/resources/assets/gba/models/item/engi_glock.json",
-          "src/main/java/net/mcreator/gba/entity/EngiGlockEntity.java"
-        ]
-      },
-      "path": "~/Glocks"
-    },
-    {
-      "name": "HiddenRecipie1",
-      "type": "recipe",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hidden_recipie_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/gba/recipes/hidden_recipie_1.json"
-        ]
-      },
-      "path": "~/Glocks"
+      }
     }
   ],
   "variable_elements": [],
@@ -205,26 +141,12 @@
       "item.gba.warm_glock": "Warm Glock",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
       "advancements.age_of_fire.title": "Age Of Fire",
-      "item.gba.engi_glock": "Engi Glock",
       "item.gba.glock": "Glock"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "Glocks",
-        "children": []
-      },
-      {
-        "name": "Bosses",
-        "children": []
-      },
-      {
-        "name": "Amper",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "gba",

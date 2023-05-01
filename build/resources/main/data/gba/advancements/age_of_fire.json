@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:fire"
+    },
+    "title": {
+      "translate": "advancements.age_of_fire.title"
+    },
+    "description": {
+      "translate": "advancements.age_of_fire.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "age_of_fire": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:blaze_rod"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gba:burningbulletrecipie_1",
+      "gba:warm_glock_recipie"
+    ]
+  },
+  "parent": "minecraft:nether/obtain_blaze_rod"
+}
