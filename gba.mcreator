@@ -1,9 +1,126 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "SmallBullet",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/SmallBulletItem.java",
+          "src/main/resources/assets/gba/models/item/small_bullet.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallBulletRecipie",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_bullet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/small_bullet_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "Glock",
+      "type": "rangeditem",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/glock.json",
+          "src/main/java/net/mcreator/gba/entity/GlockEntity.java",
+          "src/main/java/net/mcreator/gba/item/GlockItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BurningBullet",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burning_bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/burning_bullet.json",
+          "src/main/java/net/mcreator/gba/item/BurningBulletItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Burningbulletrecipie1",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burningbulletrecipie_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/burningbulletrecipie_1.json"
+        ]
+      }
+    },
+    {
+      "name": "WarmGlock",
+      "type": "rangeditem",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_glock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/entity/WarmGlockEntity.java",
+          "src/main/resources/assets/gba/models/item/warm_glock.json",
+          "src/main/java/net/mcreator/gba/item/WarmGlockItem.java"
+        ]
+      }
+    },
+    {
+      "name": "WarmGlockRecipie",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_glock_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/warm_glock_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "AgeOfFire",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "age_of_fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/age_of_fire.json"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.gba.small_bullet": "Small Bullet",
+      "item.gba.burning_bullet": "Burning Bullet",
+      "item.gba.warm_glock": "Warm Glock",
+      "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
+      "advancements.age_of_fire.title": "Age Of Fire",
+      "item.gba.glock": "Glock"
+    }
   },
   "foldersRoot": {
     "name": "~",

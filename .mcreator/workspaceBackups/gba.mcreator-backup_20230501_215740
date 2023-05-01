@@ -1,0 +1,75 @@
+{
+  "mod_elements": [
+    {
+      "name": "SmallBullet",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/SmallBulletItem.java",
+          "src/main/resources/assets/gba/models/item/small_bullet.json"
+        ]
+      }
+    },
+    {
+      "name": "SmallBulletRecipie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "small_bullet_recipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/small_bullet_recipie.json"
+        ]
+      }
+    },
+    {
+      "name": "JesuGlock",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jesu_glock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/JesuGlockItem.java",
+          "src/main/java/net/mcreator/gba/entity/JesuGlockEntity.java",
+          "src/main/resources/assets/gba/models/item/jesu_glock.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.gba.small_bullet": "Small Bullet",
+      "item.gba.jesu_glock": "Glock"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "gba",
+    "modName": "GBA",
+    "version": "1.0.0",
+    "author": "Tae, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "modElementsPackage": "net.mcreator.gba",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}
