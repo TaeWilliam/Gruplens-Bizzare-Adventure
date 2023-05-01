@@ -15,7 +15,7 @@
     "dripParticle": {
       "value": "SOUL"
     },
-    "flowStrength": 10.0,
+    "flowStrength": 0.30000000000000004,
     "luminosity": 0,
     "density": 100,
     "viscosity": 100,

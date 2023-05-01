@@ -12,6 +12,6 @@ public class DiarrheaMobplayerCollidesBlockProcedure {
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 60, 1));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 99999999));
+			_entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 60, 10));
 	}
 }
