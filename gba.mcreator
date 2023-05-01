@@ -194,6 +194,99 @@
         ]
       },
       "path": "~/Glocks"
+    },
+    {
+      "name": "MysteriousBucket",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/mysterious_bucket.json",
+          "src/main/java/net/mcreator/gba/item/MysteriousBucketItem.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "EngisRecipie1",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engis_recipie_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/engis_recipie_1.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "DiarrheaMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diarrhea_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/DiarrheaMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Diarrhea",
+      "type": "fluid",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diarrhea",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/DiarrheaItem.java",
+          "src/main/java/net/mcreator/gba/block/DiarrheaBlock.java",
+          "src/main/resources/assets/gba/models/block/diarrhea.json",
+          "src/main/java/net/mcreator/gba/fluid/types/DiarrheaFluidType.java",
+          "src/main/resources/assets/gba/models/item/diarrhea_bucket.json",
+          "src/main/resources/assets/gba/blockstates/diarrhea.json",
+          "src/main/java/net/mcreator/gba/fluid/DiarrheaFluid.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "MysteriousBucketPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_bucket_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/MysteriousBucketPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
     }
   ],
   "variable_elements": [],
@@ -203,10 +296,14 @@
       "item.gba.small_bullet": "Small Bullet",
       "item.gba.burning_bullet": "Burning Bullet",
       "item.gba.warm_glock": "Warm Glock",
+      "block.gba.diarrhea": "Diarrhea",
+      "item.gba.mysterious_bucket": "Mysterious Bucket",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
       "advancements.age_of_fire.title": "Age Of Fire",
       "item.gba.engi_glock": "Engi Glock",
-      "item.gba.glock": "Glock"
+      "fluid.gba.diarrhea": "Diarrhea",
+      "item.gba.glock": "Glock",
+      "item.gba.diarrhea_bucket": "Diarrhea Bucket"
     }
   },
   "foldersRoot": {
@@ -222,6 +319,10 @@
       },
       {
         "name": "Amper",
+        "children": []
+      },
+      {
+        "name": "Engis_Cursed_Creationer",
         "children": []
       }
     ]

@@ -2,8 +2,12 @@
   "item.gba.small_bullet": "Small Bullet",
   "item.gba.burning_bullet": "Burning Bullet",
   "item.gba.warm_glock": "Warm Glock",
+  "block.gba.diarrhea": "Diarrhea",
+  "item.gba.mysterious_bucket": "Mysterious Bucket",
   "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
   "advancements.age_of_fire.title": "Age Of Fire",
   "item.gba.engi_glock": "Engi Glock",
-  "item.gba.glock": "Glock"
+  "fluid.gba.diarrhea": "Diarrhea",
+  "item.gba.glock": "Glock",
+  "item.gba.diarrhea_bucket": "Diarrhea Bucket"
 }

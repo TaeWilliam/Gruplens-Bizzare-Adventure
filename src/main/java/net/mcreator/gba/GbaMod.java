@@ -30,7 +30,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.gba.init.GbaModItems;
+import net.mcreator.gba.init.GbaModFluids;
+import net.mcreator.gba.init.GbaModFluidTypes;
 import net.mcreator.gba.init.GbaModEntities;
+import net.mcreator.gba.init.GbaModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -51,8 +54,12 @@ public class GbaMod {
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		GbaModBlocks.REGISTRY.register(bus);
 		GbaModItems.REGISTRY.register(bus);
 		GbaModEntities.REGISTRY.register(bus);
+
+		GbaModFluids.REGISTRY.register(bus);
+		GbaModFluidTypes.REGISTRY.register(bus);
 
 	}
 

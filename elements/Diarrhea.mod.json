@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "fluid",
+  "definition": {
+    "name": "Diarrhea",
+    "bucketName": "Diarrhea Bucket",
+    "textureStill": "engisstuff",
+    "textureFlowing": "engisstuff",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 5,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "SOUL"
+    },
+    "flowStrength": 10.0,
+    "luminosity": 0,
+    "density": 100,
+    "viscosity": 100,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "emptySound": {
+      "value": "entity.slime.squish"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Jeg er skuffet over dine handlinger siden du har dette item"
+    ],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DIRT",
+    "onEntityCollides": {
+      "name": "DiarrheaMobplayerCollidesBlock"
+    }
+  }
+}
