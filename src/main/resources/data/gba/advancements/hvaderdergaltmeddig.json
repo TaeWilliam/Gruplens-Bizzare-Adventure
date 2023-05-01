@@ -1,0 +1,30 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "gba:diarrhea"
+    },
+    "title": {
+      "translate": "advancements.hvaderdergaltmeddig.title"
+    },
+    "description": {
+      "translate": "advancements.hvaderdergaltmeddig.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "hvaderdergaltmeddig": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "gba:mysterious_bucket"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 39,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "HVAD ER DER GALT MED DIG!!!",
+    "achievementDescription": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere",
+    "achievementIcon": {
+      "value": "CUSTOM:Diarrhea"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 0,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"73\" y=\"120\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:MysteriousBucket</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}
