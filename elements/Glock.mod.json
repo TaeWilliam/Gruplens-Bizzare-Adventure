@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "notexture",
+    "texture": "gun",
     "customModelName": "Normal",
     "name": "Glock",
     "specialInfo": [

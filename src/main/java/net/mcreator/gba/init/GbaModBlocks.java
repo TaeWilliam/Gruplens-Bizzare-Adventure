@@ -10,10 +10,12 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.gba.block.EngishelvedePortalBlock;
 import net.mcreator.gba.block.DiarrheaBlock;
 import net.mcreator.gba.GbaMod;
 
 public class GbaModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, GbaMod.MODID);
 	public static final RegistryObject<Block> DIARRHEA = REGISTRY.register("diarrhea", () -> new DiarrheaBlock());
+	public static final RegistryObject<Block> ENGISHELVEDE_PORTAL = REGISTRY.register("engishelvede_portal", () -> new EngishelvedePortalBlock());
 }

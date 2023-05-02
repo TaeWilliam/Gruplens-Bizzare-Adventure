@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "gba:block/engishelvede_portal_ew"
+    },
+    "axis=x": {
+      "model": "gba:block/engishelvede_portal_ns"
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "notexture",
+    "texture": "right",
     "customModelName": "Normal",
     "name": "Engi Glock",
     "specialInfo": [

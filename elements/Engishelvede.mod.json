@@ -1,0 +1,46 @@
+{
+  "_fv": 39,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Hrell"
+      }
+    ],
+    "worldGenType": "Nether like gen",
+    "mainFillerBlock": {
+      "value": "CUSTOM:Diarrhea"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:Diarrhea"
+    },
+    "airColor": {
+      "value": -12112384,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": true,
+    "isDark": true,
+    "doesWaterVaporize": true,
+    "sleepResult": "DENY",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "Blocks.DIRT#0"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.slime.place"
+    },
+    "igniterName": "Engis helvede",
+    "igniterTab": {
+      "value": "No creative tab entry"
+    },
+    "texture": "no",
+    "portalTexture": "engisstuff",
+    "enablePortal": true
+  }
+}

@@ -29,11 +29,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.gba.init.GbaModSounds;
 import net.mcreator.gba.init.GbaModItems;
 import net.mcreator.gba.init.GbaModFluids;
 import net.mcreator.gba.init.GbaModFluidTypes;
 import net.mcreator.gba.init.GbaModEntities;
 import net.mcreator.gba.init.GbaModBlocks;
+import net.mcreator.gba.init.GbaModBiomes;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -53,7 +55,7 @@ public class GbaMod {
 		MinecraftForge.EVENT_BUS.register(this);
 
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		GbaModSounds.REGISTRY.register(bus);
 		GbaModBlocks.REGISTRY.register(bus);
 		GbaModItems.REGISTRY.register(bus);
 		GbaModEntities.REGISTRY.register(bus);
@@ -61,6 +63,7 @@ public class GbaMod {
 		GbaModFluids.REGISTRY.register(bus);
 		GbaModFluidTypes.REGISTRY.register(bus);
 
+		GbaModBiomes.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

@@ -3,7 +3,7 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "notexture",
+    "texture": "warmgun",
     "customModelName": "Normal",
     "name": "Warm Glock",
     "specialInfo": [

@@ -361,27 +361,314 @@
         ]
       },
       "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Hrell",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hrell",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/world/biome/HrellBiome.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Engishelvede",
+      "type": "dimension",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engishelvede",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/block/EngishelvedePortalBlock.java",
+          "src/main/resources/assets/gba/models/item/engishelvede.json",
+          "src/main/resources/assets/gba/models/block/engishelvede_portal_ew.json",
+          "src/main/resources/assets/gba/models/block/engishelvede_portal_ns.json",
+          "src/main/resources/data/gba/dimension_type/engishelvede.json",
+          "src/main/java/net/mcreator/gba/world/dimension/EngishelvedeDimension.java",
+          "src/main/resources/assets/gba/blockstates/engishelvede_portal.json",
+          "src/main/java/net/mcreator/gba/world/teleporter/EngishelvedeTeleporter.java",
+          "src/main/java/net/mcreator/gba/world/teleporter/EngishelvedePortalShape.java",
+          "src/main/resources/data/gba/dimension/engishelvede.json",
+          "src/main/java/net/mcreator/gba/item/EngishelvedeItem.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "DrikkenPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drikken_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/DrikkenPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Drikken",
+      "type": "item",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drikken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/DrikkenItem.java",
+          "src/main/resources/assets/gba/models/item/drikken.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "NejIkckaf",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nej_ikckaf",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/nej_ikckaf.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Simonside",
+      "type": "item",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "simonside",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/simonside.json",
+          "src/main/java/net/mcreator/gba/item/SimonsideItem.java"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "EnidePlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enide_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/EnidePlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Enide",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/EnideItem.java",
+          "src/main/resources/assets/gba/models/item/enide.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Ide",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ide",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/IdeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Gruplensider",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplensider",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/GruplensiderItem.java",
+          "src/main/resources/assets/gba/models/item/gruplensider.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "GruplenPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplen_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/GruplenPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "GruplensiderPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplensider_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/GruplensiderPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Gruplen",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/GruplenItem.java",
+          "src/main/resources/assets/gba/models/item/gruplen.json"
+        ]
+      },
+      "path": "~/Ideer"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "gruplen_sang1",
+      "files": [
+        "yt2mp3.info_-i-can-danccc-_320kbps_"
+      ],
+      "category": "music",
+      "subtitle": ""
+    },
+    {
+      "name": "gruplensang2",
+      "files": [
+        "yt2mp3.info_-do-i-en-ild-_-die-in-a-fire-dansk-cover-_320kbps_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "gruplensang3",
+      "files": [
+        "yt2mp3.info_-californien-drommende-fuld-_320kbps_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "gruplensang4",
+      "files": [
+        "yt2mp3.info_-det-har-vaeret-sa-laenge-_-it__s-been-so-long-dansk-cover-_320kbps_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "gruplensang5",
+      "files": [
+        "yt2mp3.info_-det-har-vaeret-sa-laenge-7-_320kbps_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    }
+  ],
   "language_map": {
     "en_us": {
-      "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere",
+      "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere, plz lad vær med at sætte spanden sammen med en diarrhea spand",
       "item.gba.guccis_bog": "Guccis Bog",
-      "item.gba.small_bullet": "Small Bullet",
       "item.gba.burning_bullet": "Burning Bullet",
-      "item.gba.mystisknogle": "Mystisknogle",
-      "item.gba.mysterious_bucket": "Mysterious Bucket",
+      "subtitles.gruplensang5": "",
+      "subtitles.gruplensang4": "",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
-      "item.gba.warm_glock": "Warm Glock",
-      "block.gba.diarrhea": "Diarrhea",
+      "item.gba.enide": "Enide",
+      "subtitles.gruplensang3": "",
       "advancements.age_of_fire.title": "Age Of Fire",
       "item.gba.engi_glock": "Engi Glock",
       "fluid.gba.diarrhea": "Diarrhea",
+      "subtitles.gruplensang2": "",
       "item.gba.guccisabnebog": "Guccisabnebog",
-      "item.gba.glock": "Glock",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
+      "item.gba.gruplensider": "Gruplensider",
+      "item.gba.engishelvede": "Engis helvede",
+      "item.gba.small_bullet": "Small Bullet",
+      "item.gba.mystisknogle": "Mystisknogle",
+      "subtitles.gruplen_sang1": "",
+      "item.gba.mysterious_bucket": "Mysterious Bucket",
+      "item.gba.gruplen": "Gruplen",
+      "item.gba.simonside": "Simonside",
+      "item.gba.drikken": "Drikken",
+      "item.gba.warm_glock": "Warm Glock",
+      "block.gba.diarrhea": "Diarrhea",
+      "biome.gba.hrell": "Hrell",
+      "item.gba.glock": "Glock",
       "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!"
     }
   },
@@ -402,6 +689,14 @@
       },
       {
         "name": "Engis_Cursed_Creationer",
+        "children": []
+      },
+      {
+        "name": "stuff",
+        "children": []
+      },
+      {
+        "name": "Ideer",
         "children": []
       }
     ]

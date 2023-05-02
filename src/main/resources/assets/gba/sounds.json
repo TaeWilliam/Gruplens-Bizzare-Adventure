@@ -1,0 +1,47 @@
+{
+  "gruplen_sang1": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-i-can-danccc-_320kbps_",
+        "stream": true
+      }
+    ]
+  },
+  "gruplensang2": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-do-i-en-ild-_-die-in-a-fire-dansk-cover-_320kbps_",
+        "stream": false
+      }
+    ]
+  },
+  "gruplensang3": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-californien-drommende-fuld-_320kbps_",
+        "stream": false
+      }
+    ]
+  },
+  "gruplensang4": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-det-har-vaeret-sa-laenge-_-it__s-been-so-long-dansk-cover-_320kbps_",
+        "stream": false
+      }
+    ]
+  },
+  "gruplensang5": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-det-har-vaeret-sa-laenge-7-_320kbps_",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "gba:items/notexture"
+    "layer0": "gba:items/warmgun"
   },
   "display": {
     "thirdperson_righthand": {

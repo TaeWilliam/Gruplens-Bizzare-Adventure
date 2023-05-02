@@ -12,12 +12,18 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.gba.item.WarmGlockItem;
 import net.mcreator.gba.item.SmallBulletItem;
+import net.mcreator.gba.item.SimonsideItem;
 import net.mcreator.gba.item.MystisknogleItem;
 import net.mcreator.gba.item.MysteriousBucketItem;
 import net.mcreator.gba.item.GuccisabnebogItem;
 import net.mcreator.gba.item.GuccisBogItem;
+import net.mcreator.gba.item.GruplensiderItem;
+import net.mcreator.gba.item.GruplenItem;
 import net.mcreator.gba.item.GlockItem;
+import net.mcreator.gba.item.EnideItem;
+import net.mcreator.gba.item.EngishelvedeItem;
 import net.mcreator.gba.item.EngiGlockItem;
+import net.mcreator.gba.item.DrikkenItem;
 import net.mcreator.gba.item.DiarrheaItem;
 import net.mcreator.gba.item.BurningBulletItem;
 import net.mcreator.gba.GbaMod;
@@ -34,4 +40,10 @@ public class GbaModItems {
 	public static final RegistryObject<Item> GUCCIS_BOG = REGISTRY.register("guccis_bog", () -> new GuccisBogItem());
 	public static final RegistryObject<Item> MYSTISKNOGLE = REGISTRY.register("mystisknogle", () -> new MystisknogleItem());
 	public static final RegistryObject<Item> GUCCISABNEBOG = REGISTRY.register("guccisabnebog", () -> new GuccisabnebogItem());
+	public static final RegistryObject<Item> ENGISHELVEDE = REGISTRY.register("engishelvede", () -> new EngishelvedeItem());
+	public static final RegistryObject<Item> DRIKKEN = REGISTRY.register("drikken", () -> new DrikkenItem());
+	public static final RegistryObject<Item> SIMONSIDE = REGISTRY.register("simonside", () -> new SimonsideItem());
+	public static final RegistryObject<Item> ENIDE = REGISTRY.register("enide", () -> new EnideItem());
+	public static final RegistryObject<Item> GRUPLENSIDER = REGISTRY.register("gruplensider", () -> new GruplensiderItem());
+	public static final RegistryObject<Item> GRUPLEN = REGISTRY.register("gruplen", () -> new GruplenItem());
 }
