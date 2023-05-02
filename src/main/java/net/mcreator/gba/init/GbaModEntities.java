@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.gba.entity.WarmGlockEntity;
+import net.mcreator.gba.entity.STOPEntity;
 import net.mcreator.gba.entity.GlockEntity;
 import net.mcreator.gba.entity.EngiGlockEntity;
 import net.mcreator.gba.GbaMod;
@@ -30,6 +31,8 @@ public class GbaModEntities {
 			EntityType.Builder.<WarmGlockEntity>of(WarmGlockEntity::new, MobCategory.MISC).setCustomClientFactory(WarmGlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<EngiGlockEntity>> ENGI_GLOCK = register("projectile_engi_glock",
 			EntityType.Builder.<EngiGlockEntity>of(EngiGlockEntity::new, MobCategory.MISC).setCustomClientFactory(EngiGlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<STOPEntity>> STOP = register("projectile_stop",
+			EntityType.Builder.<STOPEntity>of(STOPEntity::new, MobCategory.MISC).setCustomClientFactory(STOPEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

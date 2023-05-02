@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.mcreator.gba.item.WarmGlockItem;
 import net.mcreator.gba.item.SmallBulletItem;
 import net.mcreator.gba.item.SimonsideItem;
+import net.mcreator.gba.item.STOPItem;
 import net.mcreator.gba.item.MystisknogleItem;
 import net.mcreator.gba.item.MysteriousBucketItem;
 import net.mcreator.gba.item.GuccisabnebogItem;
@@ -46,4 +47,5 @@ public class GbaModItems {
 	public static final RegistryObject<Item> ENIDE = REGISTRY.register("enide", () -> new EnideItem());
 	public static final RegistryObject<Item> GRUPLENSIDER = REGISTRY.register("gruplensider", () -> new GruplensiderItem());
 	public static final RegistryObject<Item> GRUPLEN = REGISTRY.register("gruplen", () -> new GruplenItem());
+	public static final RegistryObject<Item> STOP = REGISTRY.register("stop", () -> new STOPItem());
 }

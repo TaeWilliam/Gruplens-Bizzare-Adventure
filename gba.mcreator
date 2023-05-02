@@ -639,6 +639,46 @@
         ]
       },
       "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "STOP",
+      "type": "rangeditem",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/stop.json",
+          "src/main/java/net/mcreator/gba/item/STOPItem.java",
+          "src/main/java/net/mcreator/gba/entity/STOPEntity.java"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "STOPRangedItemUsed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stop_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/STOPRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stuff"
     }
   ],
   "variable_elements": [],
@@ -682,6 +722,14 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "steelpipe",
+      "files": [
+        "yt2mp3.info_-metal-pipe-falling-sound-effect-_320kbps_"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -694,12 +742,14 @@
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
       "item.gba.enide": "Enide",
       "subtitles.gruplensang3": "",
+      "item.gba.stop": "STOP",
       "advancements.age_of_fire.title": "Age Of Fire",
       "item.gba.engi_glock": "Engi Glock",
       "fluid.gba.diarrhea": "Diarrhea",
       "subtitles.gruplensang2": "",
       "item.gba.guccisabnebog": "Guccisabnebog",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
+      "subtitles.steelpipe": "",
       "item.gba.gruplensider": "Gruplensider",
       "item.gba.engishelvede": "Engis helvede",
       "item.gba.small_bullet": "Small Bullet",

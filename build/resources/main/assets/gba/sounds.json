@@ -43,5 +43,14 @@
         "stream": false
       }
     ]
+  },
+  "steelpipe": {
+    "category": "player",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-metal-pipe-falling-sound-effect-_320kbps_",
+        "stream": false
+      }
+    ]
   }
 }

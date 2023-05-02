@@ -1,0 +1,30 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:cave_air"
+    },
+    "title": {
+      "translate": "advancements.minforbandede_verden.title"
+    },
+    "description": {
+      "translate": "advancements.minforbandede_verden.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "minforbandede_verden": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  }
+}

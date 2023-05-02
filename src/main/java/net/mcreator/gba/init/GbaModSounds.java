@@ -20,4 +20,5 @@ public class GbaModSounds {
 	public static final RegistryObject<SoundEvent> GRUPLENSANG3 = REGISTRY.register("gruplensang3", () -> new SoundEvent(new ResourceLocation("gba", "gruplensang3")));
 	public static final RegistryObject<SoundEvent> GRUPLENSANG4 = REGISTRY.register("gruplensang4", () -> new SoundEvent(new ResourceLocation("gba", "gruplensang4")));
 	public static final RegistryObject<SoundEvent> GRUPLENSANG5 = REGISTRY.register("gruplensang5", () -> new SoundEvent(new ResourceLocation("gba", "gruplensang5")));
+	public static final RegistryObject<SoundEvent> STEELPIPE = REGISTRY.register("steelpipe", () -> new SoundEvent(new ResourceLocation("gba", "steelpipe")));
 }

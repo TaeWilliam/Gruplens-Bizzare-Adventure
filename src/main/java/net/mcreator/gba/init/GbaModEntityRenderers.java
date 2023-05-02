@@ -18,5 +18,6 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.GLOCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.WARM_GLOCK.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.ENGI_GLOCK.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.STOP.get(), ThrownItemRenderer::new);
 	}
 }
