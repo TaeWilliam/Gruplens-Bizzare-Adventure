@@ -302,65 +302,6 @@
         ]
       },
       "path": "~/Engis_Cursed_Creationer"
-    },
-    {
-      "name": "GuccisBog",
-      "type": "item",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guccis_bog",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/gba/models/item/guccis_bog.json",
-          "src/main/java/net/mcreator/gba/item/GuccisBogItem.java"
-        ]
-      },
-      "path": "~/Engis_Cursed_Creationer"
-    },
-    {
-      "name": "Mystisknogle",
-      "type": "item",
-      "sortid": 21,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mystisknogle",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/gba/models/item/mystisknogle.json",
-          "src/main/java/net/mcreator/gba/item/MystisknogleItem.java"
-        ]
-      },
-      "path": "~/Engis_Cursed_Creationer"
-    },
-    {
-      "name": "Guccisabnebog",
-      "type": "item",
-      "sortid": 22,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "guccisabnebog",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/gba/models/item/guccisabnebog.json",
-          "src/main/java/net/mcreator/gba/item/GuccisabnebogItem.java"
-        ]
-      },
-      "path": "~/Engis_Cursed_Creationer"
-    },
-    {
-      "name": "Bogabning",
-      "type": "recipe",
-      "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bogabning",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/gba/recipes/bogabning.json"
-        ]
-      },
-      "path": "~/Engis_Cursed_Creationer"
     }
   ],
   "variable_elements": [],
@@ -368,10 +309,8 @@
   "language_map": {
     "en_us": {
       "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere",
-      "item.gba.guccis_bog": "Guccis Bog",
       "item.gba.small_bullet": "Small Bullet",
       "item.gba.burning_bullet": "Burning Bullet",
-      "item.gba.mystisknogle": "Mystisknogle",
       "item.gba.mysterious_bucket": "Mysterious Bucket",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
       "item.gba.warm_glock": "Warm Glock",
@@ -379,7 +318,6 @@
       "advancements.age_of_fire.title": "Age Of Fire",
       "item.gba.engi_glock": "Engi Glock",
       "fluid.gba.diarrhea": "Diarrhea",
-      "item.gba.guccisabnebog": "Guccisabnebog",
       "item.gba.glock": "Glock",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
       "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!"
