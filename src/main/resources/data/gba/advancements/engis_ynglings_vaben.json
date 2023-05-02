@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "gba:glock"
+    },
+    "title": {
+      "translate": "advancements.engis_ynglings_vaben.title"
+    },
+    "description": {
+      "translate": "advancements.engis_ynglings_vaben.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "engis_ynglings_vaben": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ingot"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "gba:glovky",
+      "gba:roadrol",
+      "gba:lilledamptromel"
+    ]
+  },
+  "parent": "minecraft:story/smelt_iron"
+}

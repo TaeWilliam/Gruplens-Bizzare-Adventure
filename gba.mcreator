@@ -679,6 +679,433 @@
         ]
       },
       "path": "~/stuff"
+    },
+    {
+      "name": "ROADROLLER",
+      "type": "rangeditem",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roadroller",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/ROADROLLERItem.java",
+          "src/main/resources/assets/gba/models/item/roadroller.json",
+          "src/main/java/net/mcreator/gba/entity/ROADROLLEREntity.java",
+          "src/main/java/net/mcreator/gba/client/renderer/ROADROLLERRenderer.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "ROADROL",
+      "type": "recipe",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roadrol",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/roadrol.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "EngisYnglingsVaben",
+      "type": "achievement",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engis_ynglings_vaben",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/engis_ynglings_vaben.json"
+        ]
+      },
+      "path": "~/Glocks"
+    },
+    {
+      "name": "ROADROLLERProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roadroller_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/ROADROLLERProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Modelbil",
+      "type": "item",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modelbil",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/modelbil.json",
+          "src/main/java/net/mcreator/gba/item/ModelbilItem.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "DAMPTROMLEE",
+      "type": "livingentity",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damptromlee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/entity/DAMPTROMLEEEntity.java",
+          "src/main/resources/assets/gba/models/item/damptromlee_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/client/renderer/DAMPTROMLEERenderer.java"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "ModelbilPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "modelbil_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/ModelbilPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "Lilledamptromel",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lilledamptromel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/lilledamptromel.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "DAMPTROMLEEOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damptromlee_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/DAMPTROMLEEOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
+    },
+    {
+      "name": "FriendlyGucciEntityDies",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friendly_gucci_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/FriendlyGucciEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "FriendlyGucci",
+      "type": "livingentity",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "friendly_gucci",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/friendly_gucci_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/entity/FriendlyGucciEntity.java",
+          "src/main/resources/data/gba/forge/biome_modifier/friendly_gucci_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/client/renderer/FriendlyGucciRenderer.java"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "GucciskorsPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gucciskors_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/GucciskorsPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Gucciskors",
+      "type": "item",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gucciskors",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/gucciskors.json",
+          "src/main/java/net/mcreator/gba/item/GucciskorsItem.java"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Korss",
+      "type": "recipe",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "korss",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/korss.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Envenligpraest",
+      "type": "achievement",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "envenligpraest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/envenligpraest.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Lukasessvaerd",
+      "type": "tool",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lukasessvaerd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/LukasessvaerdItem.java",
+          "src/main/resources/assets/gba/models/item/lukasessvaerd.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "LukasessvaerdLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lukasessvaerd_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/LukasessvaerdLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "HjemmeforsvarspindLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hjemmeforsvarspind_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/HjemmeforsvarspindLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Hjemmeforsvarspind",
+      "type": "tool",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hjemmeforsvarspind",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/HjemmeforsvarspindItem.java",
+          "src/main/resources/assets/gba/models/item/hjemmeforsvarspind.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "SenatorArmstaerk",
+      "type": "livingentity",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senator_armstaerk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/senator_armstaerk_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/client/renderer/SenatorArmstaerkRenderer.java",
+          "src/main/java/net/mcreator/gba/entity/SenatorArmstaerkEntity.java"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Senatoren",
+      "type": "item",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senatoren",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/SenatorenItem.java",
+          "src/main/resources/assets/gba/models/item/senatoren.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "SenatorenPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senatoren_player_finishes_using_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/SenatorenPlayerFinishesUsingItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bosses"
     }
   ],
   "variable_elements": [],
@@ -730,42 +1157,94 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "roadroller",
+      "files": [
+        "yt2mp3.info_-road-roller-da-sound-effect-download-_320kbps_"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "ihaveadream",
+      "files": [
+        "yt2mp3"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "nanomachine",
+      "files": [
+        "yt2mp3.info_-mgr-senator-armstrong-nanomachine-son-sound-effect-_320kbps_-_1_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "detblvnodttilatvr",
+      "files": [
+        "yt2mp3.info_-it-has-to-be-this-way-_320kbps_"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere, plz lad vær med at sætte spanden sammen med en diarrhea spand",
-      "item.gba.guccis_bog": "Guccis Bog",
+      "item.gba.roadroller": "ROADROLLER",
       "item.gba.burning_bullet": "Burning Bullet",
       "subtitles.gruplensang5": "",
       "subtitles.gruplensang4": "",
-      "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
-      "item.gba.enide": "Enide",
       "subtitles.gruplensang3": "",
+      "item.gba.enide": "Enide",
       "item.gba.stop": "STOP",
-      "advancements.age_of_fire.title": "Age Of Fire",
-      "item.gba.engi_glock": "Engi Glock",
-      "fluid.gba.diarrhea": "Diarrhea",
+      "item.gba.damptromlee_spawn_egg": "DAMPTROMLEE Spawn Egg",
       "subtitles.gruplensang2": "",
       "item.gba.guccisabnebog": "Guccisabnebog",
+      "item.gba.gucciskors": "Gucciskors",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
       "subtitles.steelpipe": "",
-      "item.gba.gruplensider": "Gruplensider",
       "item.gba.engishelvede": "Engis helvede",
-      "item.gba.small_bullet": "Small Bullet",
-      "item.gba.mystisknogle": "Mystisknogle",
       "subtitles.gruplen_sang1": "",
-      "item.gba.mysterious_bucket": "Mysterious Bucket",
-      "item.gba.gruplen": "Gruplen",
       "item.gba.simonside": "Simonside",
       "item.gba.drikken": "Drikken",
+      "item.gba.modelbil": "Modelbil",
       "item.gba.warm_glock": "Warm Glock",
-      "block.gba.diarrhea": "Diarrhea",
       "advancements.minforbandede_verden.descr": "...",
-      "advancements.minforbandede_verden.title": "Min forbandede Verden",
+      "entity.gba.damptromlee": "DAMPTROMLEE",
+      "advancements.engis_ynglings_vaben.title": "Engis Ynglings Vaben",
       "biome.gba.hrell": "Hrell",
+      "subtitles.roadroller": "",
       "item.gba.glock": "Glock",
-      "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!"
+      "item.gba.hjemmeforsvarspind": "Hjemmeforsvarspind",
+      "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!",
+      "entity.gba.senator_armstaerk": "Senator Armstaerk",
+      "item.gba.guccis_bog": "Guccis Bog",
+      "advancements.envenligpraest.descr": "Hidkald din ven",
+      "item.gba.friendly_gucci_spawn_egg": "Friendly Gucci Spawn Egg",
+      "item.gba.lukasessvaerd": "Lukasessvaerd",
+      "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
+      "subtitles.ihaveadream": "",
+      "subtitles.detblvnodttilatvr": "",
+      "advancements.envenligpraest.title": "Envenligpraest",
+      "fluid.gba.diarrhea": "Diarrhea",
+      "item.gba.engi_glock": "Engi Glock",
+      "advancements.age_of_fire.title": "Age Of Fire",
+      "item.gba.senator_armstaerk_spawn_egg": "Senator Armstaerk Spawn Egg",
+      "item.gba.gruplensider": "Gruplensider",
+      "item.gba.small_bullet": "Small Bullet",
+      "item.gba.mystisknogle": "Mystisknogle",
+      "item.gba.mysterious_bucket": "Mysterious Bucket",
+      "item.gba.gruplen": "Gruplen",
+      "advancements.engis_ynglings_vaben.descr": "hvad venter du på? der skal craftes",
+      "item.gba.senatoren": "Senatoren",
+      "entity.gba.friendly_gucci": "Friendly Gucci",
+      "subtitles.nanomachine": "",
+      "block.gba.diarrhea": "Diarrhea",
+      "advancements.minforbandede_verden.title": "Min forbandede Verden"
     }
   },
   "foldersRoot": {

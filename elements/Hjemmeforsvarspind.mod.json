@@ -1,0 +1,36 @@
+{
+  "_fv": 39,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "selvfprsvarspind",
+    "customModelName": "Normal",
+    "name": "Hjemmeforsvarspind",
+    "specialInfo": [
+      "Det eneste våben der kan holde en svensker væk"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.5,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 250,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "repairItems": [
+      {
+        "value": "Items.STICK"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "HjemmeforsvarspindLivingEntityIsHitWithTool"
+    }
+  }
+}

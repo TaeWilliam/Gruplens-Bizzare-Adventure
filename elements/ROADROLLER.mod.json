@@ -1,0 +1,42 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "roadroler",
+    "customModelName": "Normal",
+    "name": "ROADROLLER",
+    "specialInfo": [
+      "ROADEROLLER"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "CUSTOM:roadroller"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 20.0,
+    "bulletKnockback": 100,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelcustom_model",
+    "customBulletModelTexture": "roadrollerrr.png",
+    "onBulletHitsBlock": {
+      "name": "ROADROLLERProjectileHitsBlock"
+    }
+  }
+}

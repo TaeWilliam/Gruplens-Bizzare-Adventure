@@ -52,5 +52,41 @@
         "stream": false
       }
     ]
+  },
+  "roadroller": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-road-roller-da-sound-effect-download-_320kbps_",
+        "stream": false
+      }
+    ]
+  },
+  "ihaveadream": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3",
+        "stream": false
+      }
+    ]
+  },
+  "nanomachine": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-mgr-senator-armstrong-nanomachine-son-sound-effect-_320kbps_-_1_",
+        "stream": false
+      }
+    ]
+  },
+  "detblvnodttilatvr": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-it-has-to-be-this-way-_320kbps_",
+        "stream": false
+      }
+    ]
   }
 }
