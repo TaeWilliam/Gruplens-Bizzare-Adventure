@@ -157,10 +157,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
           }
         ]
       },
@@ -595,6 +591,54 @@
         ]
       },
       "path": "~/Ideer"
+    },
+    {
+      "name": "Glovky",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glovky",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/glovky.json"
+        ]
+      },
+      "path": "~/Glocks"
+    },
+    {
+      "name": "WarmGlockProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warm_glock_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/WarmGlockProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Glocks"
+    },
+    {
+      "name": "MinforbandedeVerden",
+      "type": "achievement",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minforbandede_verden",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/minforbandede_verden.json"
+        ]
+      },
+      "path": "~/Engis_Cursed_Creationer"
     }
   ],
   "variable_elements": [],
@@ -667,6 +711,8 @@
       "item.gba.drikken": "Drikken",
       "item.gba.warm_glock": "Warm Glock",
       "block.gba.diarrhea": "Diarrhea",
+      "advancements.minforbandede_verden.descr": "...",
+      "advancements.minforbandede_verden.title": "Min forbandede Verden",
       "biome.gba.hrell": "Hrell",
       "item.gba.glock": "Glock",
       "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!"

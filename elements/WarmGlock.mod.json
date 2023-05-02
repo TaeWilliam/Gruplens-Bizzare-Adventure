@@ -17,7 +17,7 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 600,
+    "usageCount": 128,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
@@ -34,6 +34,9 @@
       "value": "Items.FIRE_CHARGE"
     },
     "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "WarmGlockProjectileHitsLivingEntity"
+    }
   }
 }

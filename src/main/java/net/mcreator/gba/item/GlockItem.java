@@ -24,7 +24,7 @@ import java.util.List;
 
 public class GlockItem extends Item {
 	public GlockItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(400));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(96));
 	}
 
 	@Override

@@ -67,7 +67,7 @@ public class EngiGlockEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		EngiGlockProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity(), this.getOwner());
+		EngiGlockProjectileHitsLivingEntityProcedure.execute(entityHitResult.getEntity());
 	}
 
 	@Override

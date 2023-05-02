@@ -22,7 +22,7 @@ import java.util.List;
 
 public class WarmGlockItem extends Item {
 	public WarmGlockItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(600));
+		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(128));
 	}
 
 	@Override
