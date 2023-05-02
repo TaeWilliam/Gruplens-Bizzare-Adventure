@@ -25,4 +25,5 @@ public class GbaModSounds {
 	public static final RegistryObject<SoundEvent> IHAVEADREAM = REGISTRY.register("ihaveadream", () -> new SoundEvent(new ResourceLocation("gba", "ihaveadream")));
 	public static final RegistryObject<SoundEvent> NANOMACHINE = REGISTRY.register("nanomachine", () -> new SoundEvent(new ResourceLocation("gba", "nanomachine")));
 	public static final RegistryObject<SoundEvent> DETBLVNODTTILATVR = REGISTRY.register("detblvnodttilatvr", () -> new SoundEvent(new ResourceLocation("gba", "detblvnodttilatvr")));
+	public static final RegistryObject<SoundEvent> CAESAR = REGISTRY.register("caesar", () -> new SoundEvent(new ResourceLocation("gba", "caesar")));
 }

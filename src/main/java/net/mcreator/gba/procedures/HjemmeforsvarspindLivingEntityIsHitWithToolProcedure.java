@@ -5,15 +5,23 @@ import net.minecraftforge.server.ServerLifecycleHooks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.tags.TagKey;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.Registry;
 
 public class HjemmeforsvarspindLivingEntityIsHitWithToolProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		double kills = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) <= 0) {
+		if (entity.isAlive() == false) {
+			kills = kills + 1;
+		}
+		if (entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("mod:svensker")))) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth(0);
 			kills = kills + 1;
 		}
 		if (4 <= kills) {

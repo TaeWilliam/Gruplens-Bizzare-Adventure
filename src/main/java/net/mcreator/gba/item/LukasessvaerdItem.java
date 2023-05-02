@@ -43,7 +43,7 @@ public class LukasessvaerdItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(GbaModItems.STOP.get()));
 			}
-		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS).fireResistant());
+		}, 3, -2.4f, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).fireResistant());
 	}
 
 	@Override

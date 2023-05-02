@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gba:blocks/svens",
+    "up": "gba:blocks/svens",
+    "north": "gba:blocks/svens",
+    "east": "gba:blocks/svens",
+    "south": "gba:blocks/svens",
+    "west": "gba:blocks/svens",
+    "particle": "gba:blocks/svens"
+  },
+  "render_type": "solid"
+}

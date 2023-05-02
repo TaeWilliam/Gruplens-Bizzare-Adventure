@@ -1,0 +1,45 @@
+{
+  "_fv": 39,
+  "_type": "fluid",
+  "definition": {
+    "name": "Cum",
+    "bucketName": "Cum Bucket",
+    "textureStill": "cum",
+    "textureFlowing": "cum",
+    "tintType": "Fog",
+    "canMultiply": false,
+    "flowRate": 5,
+    "levelDecrease": 2,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "SMOKE_NORMAL"
+    },
+    "flowStrength": 0.5,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 10,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "emptySound": {
+      "value": "entity.slime.squish"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [
+      "Alex har fået sit ynglingsitem tilbage"
+    ],
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 15,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT"
+  }
+}

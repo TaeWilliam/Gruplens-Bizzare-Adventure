@@ -88,5 +88,14 @@
         "stream": false
       }
     ]
+  },
+  "caesar": {
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "gba:yt2mp3.info_-_shizaaaaaa_320kbps",
+        "stream": false
+      }
+    ]
   }
 }

@@ -36,7 +36,8 @@
   "rewards": {
     "experience": 1,
     "recipes": [
-      "gba:korss"
+      "gba:korss",
+      "gba:caesarrr"
     ]
   }
 }

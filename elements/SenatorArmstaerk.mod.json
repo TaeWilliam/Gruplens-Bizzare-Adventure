@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Senator Armstaerk",
     "mobLabel": "SENATOR ARMSTÆRK",
-    "mobModelName": "Biped",
-    "mobModelTexture": "roadrollerrr.png",
+    "mobModelName": "Modelsenator",
+    "mobModelTexture": "senatorr.png",
     "mobModelGlowTexture": "",
     "solidBoundingBox": {
       "fixedValue": false
@@ -81,7 +81,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Mystisknogle"
     },
     "livingSound": {
       "value": ""

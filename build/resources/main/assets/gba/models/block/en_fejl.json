@@ -1,0 +1,8 @@
+{
+  "parent": "gba:custom/suspicious_entity.animation",
+  "textures": {
+    "all": "gba:blocks/svens",
+    "particle": "gba:blocks/svens"
+  },
+  "render_type": "solid"
+}

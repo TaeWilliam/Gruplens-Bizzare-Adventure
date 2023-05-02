@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "gba:block/sverige_portal_ew"
+    },
+    "axis=x": {
+      "model": "gba:block/sverige_portal_ns"
+    }
+  }
+}

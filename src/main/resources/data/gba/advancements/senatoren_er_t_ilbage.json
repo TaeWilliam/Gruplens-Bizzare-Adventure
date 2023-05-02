@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gba:senatoren"
+    },
+    "title": {
+      "translate": "advancements.senatoren_er_t_ilbage.title"
+    },
+    "description": {
+      "translate": "advancements.senatoren_er_t_ilbage.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "senatoren_er_t_ilbage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gba:guccis_bog"
+            ],
+            "count": {
+              "min": 1,
+              "max": 78
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gba:senatorern"
+    ]
+  },
+  "parent": "gba:envenligpraest"
+}

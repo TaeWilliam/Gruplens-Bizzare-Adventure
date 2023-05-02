@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "gba:block/cum_dimention_portal_ew"
+    },
+    "axis=x": {
+      "model": "gba:block/cum_dimention_portal_ns"
+    }
+  }
+}

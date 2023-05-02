@@ -361,6 +361,7 @@
     {
       "name": "Hrell",
       "type": "biome",
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hrell",
@@ -1106,6 +1107,434 @@
         ]
       },
       "path": "~/Bosses"
+    },
+    {
+      "name": "CAESARProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caesar_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/CAESARProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "CAESAR",
+      "type": "rangeditem",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caesar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/CAESARItem.java",
+          "src/main/java/net/mcreator/gba/entity/CAESAREntity.java",
+          "src/main/resources/assets/gba/models/item/caesar.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Caesarrr",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caesarrr",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/caesarrr.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "STOPP",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stopp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/stopp.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Senatorern",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senatorern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/senatorern.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "SenatorenErTIlbage",
+      "type": "achievement",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senatoren_er_t_ilbage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/senatoren_er_t_ilbage.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Svensker",
+      "type": "livingentity",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "svensker",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/forge/biome_modifier/svensker_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/entity/SvenskerEntity.java",
+          "src/main/java/net/mcreator/gba/client/renderer/SvenskerRenderer.java",
+          "src/main/resources/assets/gba/models/item/svensker_spawn_egg.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Brondby",
+      "type": "livingentity",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brondby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/client/renderer/BrondbyRenderer.java",
+          "src/main/resources/assets/gba/models/item/brondby_spawn_egg.json",
+          "src/main/resources/data/gba/forge/biome_modifier/brondby_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/entity/BrondbyEntity.java"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "TrueBrondby",
+      "type": "livingentity",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "true_brondby",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/entity/TrueBrondbyEntity.java",
+          "src/main/resources/data/gba/forge/biome_modifier/true_brondby_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/client/renderer/TrueBrondbyRenderer.java",
+          "src/main/resources/assets/gba/models/item/true_brondby_spawn_egg.json"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Suspiciusthing",
+      "type": "livingentity",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "suspiciusthing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/suspiciusthing_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/entity/SuspiciusthingEntity.java",
+          "src/main/resources/data/gba/forge/biome_modifier/suspiciusthing_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/client/renderer/SuspiciusthingRenderer.java"
+        ]
+      },
+      "path": "~/Bosses"
+    },
+    {
+      "name": "Texturee",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "texturee",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/Texturee.java"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "Svenskerblock",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "svenskerblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/svenskerblock.json",
+          "src/main/resources/assets/gba/blockstates/svenskerblock.json",
+          "src/main/java/net/mcreator/gba/block/SvenskerblockBlock.java",
+          "src/main/resources/assets/gba/models/block/svenskerblock.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Skane",
+      "type": "biome",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skane",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/world/biome/SkaneBiome.java"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Sverige",
+      "type": "dimension",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sverige",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/dimension_type/sverige.json",
+          "src/main/resources/data/gba/dimension/sverige.json",
+          "src/main/resources/assets/gba/models/block/sverige_portal_ns.json",
+          "src/main/java/net/mcreator/gba/world/dimension/SverigeDimension.java",
+          "src/main/java/net/mcreator/gba/block/SverigePortalBlock.java",
+          "src/main/java/net/mcreator/gba/item/SverigeItem.java",
+          "src/main/java/net/mcreator/gba/world/teleporter/SverigeTeleporter.java",
+          "src/main/resources/assets/gba/models/block/sverige_portal_ew.json",
+          "src/main/resources/assets/gba/blockstates/sverige_portal.json",
+          "src/main/java/net/mcreator/gba/world/teleporter/SverigePortalShape.java",
+          "src/main/resources/assets/gba/models/item/sverige.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Sverigeentrance",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sverigeentrance",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/sverigeentrance.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Ahnej",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ahnej",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/ahnej.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "EnFejl",
+      "type": "block",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "en_fejl",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/en_fejl.json",
+          "src/main/resources/assets/gba/models/block/en_fejl.json",
+          "src/main/java/net/mcreator/gba/block/EnFejlBlock.java",
+          "src/main/resources/assets/gba/blockstates/en_fejl.json"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "GucciBePissed",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gucci_be_pissed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/client/renderer/GucciBePissedRenderer.java",
+          "src/main/java/net/mcreator/gba/entity/GucciBePissedEntity.java",
+          "src/main/resources/assets/gba/models/item/gucci_be_pissed_spawn_egg.json",
+          "src/main/resources/data/gba/forge/biome_modifier/gucci_be_pissed_biome_modifier.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Cum",
+      "type": "fluid",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/blockstates/cum.json",
+          "src/main/resources/assets/gba/models/item/cum_bucket.json",
+          "src/main/java/net/mcreator/gba/item/CumItem.java",
+          "src/main/resources/assets/gba/models/block/cum.json",
+          "src/main/java/net/mcreator/gba/fluid/CumFluid.java",
+          "src/main/java/net/mcreator/gba/block/CumBlock.java",
+          "src/main/java/net/mcreator/gba/fluid/types/CumFluidType.java"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "Hell2",
+      "type": "biome",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/world/biome/Hell2Biome.java"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "CumDimention",
+      "type": "dimension",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum_dimention",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/world/teleporter/CumDimentionTeleporter.java",
+          "src/main/java/net/mcreator/gba/world/teleporter/CumDimentionPortalShape.java",
+          "src/main/resources/assets/gba/blockstates/cum_dimention_portal.json",
+          "src/main/resources/assets/gba/models/block/cum_dimention_portal_ns.json",
+          "src/main/java/net/mcreator/gba/item/CumDimentionItem.java",
+          "src/main/resources/data/gba/dimension/cum_dimention.json",
+          "src/main/resources/data/gba/dimension_type/cum_dimention.json",
+          "src/main/java/net/mcreator/gba/world/dimension/CumDimentionDimension.java",
+          "src/main/java/net/mcreator/gba/block/CumDimentionPortalBlock.java",
+          "src/main/resources/assets/gba/models/block/cum_dimention_portal_ew.json",
+          "src/main/resources/assets/gba/models/item/cum_dimention.json"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "Cumc",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cumc",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/cumc.json"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "PointProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/PointProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "Point",
+      "type": "rangeditem",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "point",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/entity/PointEntity.java",
+          "src/main/resources/assets/gba/models/item/point.json",
+          "src/main/java/net/mcreator/gba/item/PointItem.java"
+        ]
+      },
+      "path": "~/Alex"
+    },
+    {
+      "name": "Pointer",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pointer",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/pointer.json"
+        ]
+      },
+      "path": "~/Alex"
     }
   ],
   "variable_elements": [],
@@ -1189,62 +1618,96 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "caesar",
+      "files": [
+        "yt2mp3.info_-_shizaaaaaa_320kbps"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
+      "item.gba.brondby_spawn_egg": "Brondby Spawn Egg",
       "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere, plz lad vær med at sætte spanden sammen med en diarrhea spand",
       "item.gba.roadroller": "ROADROLLER",
       "item.gba.burning_bullet": "Burning Bullet",
       "subtitles.gruplensang5": "",
+      "advancements.ahnej.title": "Ahnej",
       "subtitles.gruplensang4": "",
       "subtitles.gruplensang3": "",
       "item.gba.enide": "Enide",
+      "block.gba.en_fejl": "En Fejl",
       "item.gba.stop": "STOP",
+      "entity.gba.svensker": "Svensker",
       "item.gba.damptromlee_spawn_egg": "DAMPTROMLEE Spawn Egg",
       "subtitles.gruplensang2": "",
       "item.gba.guccisabnebog": "Guccisabnebog",
       "item.gba.gucciskors": "Gucciskors",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
       "subtitles.steelpipe": "",
+      "item.gba.cum_bucket": "Cum Bucket",
       "item.gba.engishelvede": "Engis helvede",
       "subtitles.gruplen_sang1": "",
       "item.gba.simonside": "Simonside",
       "item.gba.drikken": "Drikken",
+      "entity.gba.suspiciusthing": "Suspiciusthing",
       "item.gba.modelbil": "Modelbil",
       "item.gba.warm_glock": "Warm Glock",
+      "entity.gba.true_brondby": "Brondby",
+      "item.gba.cum_dimention": "Cum Dimention Portal Igniter",
       "advancements.minforbandede_verden.descr": "...",
       "entity.gba.damptromlee": "DAMPTROMLEE",
       "advancements.engis_ynglings_vaben.title": "Engis Ynglings Vaben",
       "biome.gba.hrell": "Hrell",
       "subtitles.roadroller": "",
+      "subtitles.caesar": "",
+      "item.gba.point": "Point",
       "item.gba.glock": "Glock",
+      "item.gba.svensker_spawn_egg": "Svensker Spawn Egg",
       "item.gba.hjemmeforsvarspind": "Hjemmeforsvarspind",
       "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!",
       "entity.gba.senator_armstaerk": "Senator Armstaerk",
+      "advancements.senatoren_er_t_ilbage.descr": "I må stoppe ham",
       "item.gba.guccis_bog": "Guccis Bog",
+      "item.gba.true_brondby_spawn_egg": "Brondby Spawn Egg",
       "advancements.envenligpraest.descr": "Hidkald din ven",
       "item.gba.friendly_gucci_spawn_egg": "Friendly Gucci Spawn Egg",
       "item.gba.lukasessvaerd": "Lukasessvaerd",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
+      "fluid.gba.cum": "Cum",
       "subtitles.ihaveadream": "",
       "subtitles.detblvnodttilatvr": "",
       "advancements.envenligpraest.title": "Envenligpraest",
+      "item.gba.caesar": "CAESAR",
+      "block.gba.cum": "Cum",
       "fluid.gba.diarrhea": "Diarrhea",
       "item.gba.engi_glock": "Engi Glock",
       "advancements.age_of_fire.title": "Age Of Fire",
+      "entity.gba.gucci_be_pissed": "Gucci Be Pissed",
+      "advancements.senatoren_er_t_ilbage.title": "Senatoren Er TIlbage",
       "item.gba.senator_armstaerk_spawn_egg": "Senator Armstaerk Spawn Egg",
+      "item.gba.sverige": "Sverige Portal Igniter",
       "item.gba.gruplensider": "Gruplensider",
+      "item.gba.gucci_be_pissed_spawn_egg": "Gucci Be Pissed Spawn Egg",
       "item.gba.small_bullet": "Small Bullet",
       "item.gba.mystisknogle": "Mystisknogle",
       "item.gba.mysterious_bucket": "Mysterious Bucket",
+      "entity.gba.brondby": "Brondby",
+      "item.gba.suspiciusthing_spawn_egg": "Suspiciusthing Spawn Egg",
       "item.gba.gruplen": "Gruplen",
+      "biome.gba.hell_2": "Hell 2",
       "advancements.engis_ynglings_vaben.descr": "hvad venter du på? der skal craftes",
       "item.gba.senatoren": "Senatoren",
       "entity.gba.friendly_gucci": "Friendly Gucci",
+      "block.gba.svenskerblock": "Svenskerblock",
       "subtitles.nanomachine": "",
       "block.gba.diarrhea": "Diarrhea",
-      "advancements.minforbandede_verden.title": "Min forbandede Verden"
+      "advancements.minforbandede_verden.title": "Min forbandede Verden",
+      "biome.gba.skane": "Skane",
+      "advancements.ahnej.descr": "Plz ikke gør det"
     }
   },
   "foldersRoot": {
@@ -1272,6 +1735,14 @@
       },
       {
         "name": "Ideer",
+        "children": []
+      },
+      {
+        "name": "Animations",
+        "children": []
+      },
+      {
+        "name": "Alex",
         "children": []
       }
     ]

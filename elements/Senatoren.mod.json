@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "notexture",
+    "texture": "senator",
     "customModelName": "Normal",
     "name": "Senatoren",
     "rarity": "COMMON",
@@ -31,6 +31,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "SenatorenPlayerFinishesUsingItem"
+    },
     "isFood": true,
     "nutritionalValue": 0,
     "saturation": 0.0,
