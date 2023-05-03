@@ -1,0 +1,9 @@
+{
+  "parent": "gba:custom/gucciklam.java",
+  "textures": {
+    "all": "gba:blocks/cucci",
+    "particle": "gba:blocks/cucci",
+    "0": "gba:blocks/cucci"
+  },
+  "render_type": "solid"
+}

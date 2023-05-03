@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.mcreator.gba.client.model.Modelsenator;
 import net.mcreator.gba.client.model.Modelroadroller;
 import net.mcreator.gba.client.model.Modelgucci;
+import net.mcreator.gba.client.model.Modelgenerticdudde;
 import net.mcreator.gba.client.model.Modelcustom_model;
 import net.mcreator.gba.client.model.ModelSvensker;
 import net.mcreator.gba.client.model.ModelSuspicious_Entity;
@@ -24,6 +25,7 @@ public class GbaModModels {
 		event.registerLayerDefinition(Modelgucci.LAYER_LOCATION, Modelgucci::createBodyLayer);
 		event.registerLayerDefinition(Modelroadroller.LAYER_LOCATION, Modelroadroller::createBodyLayer);
 		event.registerLayerDefinition(Modelsenator.LAYER_LOCATION, Modelsenator::createBodyLayer);
+		event.registerLayerDefinition(Modelgenerticdudde.LAYER_LOCATION, Modelgenerticdudde::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
 		event.registerLayerDefinition(ModelSuspicious_Entity.LAYER_LOCATION, ModelSuspicious_Entity::createBodyLayer);
 	}

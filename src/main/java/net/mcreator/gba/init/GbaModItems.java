@@ -17,7 +17,9 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.gba.item.WarmGlockItem;
+import net.mcreator.gba.item.TheTeamItem;
 import net.mcreator.gba.item.SverigeItem;
+import net.mcreator.gba.item.SniperentityItem;
 import net.mcreator.gba.item.SmallBulletItem;
 import net.mcreator.gba.item.SimonsideItem;
 import net.mcreator.gba.item.SenatorenItem;
@@ -87,6 +89,14 @@ public class GbaModItems {
 	public static final RegistryObject<Item> CUM_BUCKET = REGISTRY.register("cum_bucket", () -> new CumItem());
 	public static final RegistryObject<Item> CUM_DIMENTION = REGISTRY.register("cum_dimention", () -> new CumDimentionItem());
 	public static final RegistryObject<Item> POINT = REGISTRY.register("point", () -> new PointItem());
+	public static final RegistryObject<Item> SCOUT_SPAWN_EGG = REGISTRY.register("scout_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.SCOUT, -3407872, -16776961, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HEAVY_SPAWN_EGG = REGISTRY.register("heavy_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.HEAVY, -52480, -16777063, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SNIPERENTITY = REGISTRY.register("sniperentity", () -> new SniperentityItem());
+	public static final RegistryObject<Item> SNIPER_SPAWN_EGG = REGISTRY.register("sniper_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.SNIPER, -16777012, -3407872, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SOLDIER_SPAWN_EGG = REGISTRY.register("soldier_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.SOLDIER, -3407821, -16777063, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPY_SPAWN_EGG = REGISTRY.register("spy_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.SPY, -6750157, -16777012, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> THE_TEAM = REGISTRY.register("the_team", () -> new TheTeamItem());
+	public static final RegistryObject<Item> GUCCI = block(GbaModBlocks.GUCCI, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

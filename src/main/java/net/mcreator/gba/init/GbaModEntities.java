@@ -20,12 +20,20 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.gba.entity.WarmGlockEntity;
 import net.mcreator.gba.entity.TrueBrondbyEntity;
+import net.mcreator.gba.entity.TheTeamEntity;
 import net.mcreator.gba.entity.SvenskerEntity;
 import net.mcreator.gba.entity.SuspiciusthingEntity;
+import net.mcreator.gba.entity.SpyEntity;
+import net.mcreator.gba.entity.SoldierEntity;
+import net.mcreator.gba.entity.SniperentityEntity;
+import net.mcreator.gba.entity.SniperEntity;
 import net.mcreator.gba.entity.SenatorArmstaerkEntity;
+import net.mcreator.gba.entity.ScoutEntity;
 import net.mcreator.gba.entity.STOPEntity;
 import net.mcreator.gba.entity.ROADROLLEREntity;
 import net.mcreator.gba.entity.PointEntity;
+import net.mcreator.gba.entity.HeavyEntityProjectile;
+import net.mcreator.gba.entity.HeavyEntity;
 import net.mcreator.gba.entity.GucciBePissedEntity;
 import net.mcreator.gba.entity.GlockEntity;
 import net.mcreator.gba.entity.FriendlyGucciEntity;
@@ -84,6 +92,32 @@ public class GbaModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PointEntity>> POINT = register("projectile_point",
 			EntityType.Builder.<PointEntity>of(PointEntity::new, MobCategory.MISC).setCustomClientFactory(PointEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ScoutEntity>> SCOUT = register("scout",
+			EntityType.Builder.<ScoutEntity>of(ScoutEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ScoutEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HeavyEntity>> HEAVY = register("heavy",
+			EntityType.Builder.<HeavyEntity>of(HeavyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HeavyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HeavyEntityProjectile>> HEAVY_PROJECTILE = register("projectile_heavy", EntityType.Builder.<HeavyEntityProjectile>of(HeavyEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(HeavyEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SniperentityEntity>> SNIPERENTITY = register("projectile_sniperentity",
+			EntityType.Builder.<SniperentityEntity>of(SniperentityEntity::new, MobCategory.MISC).setCustomClientFactory(SniperentityEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SniperEntity>> SNIPER = register("sniper",
+			EntityType.Builder.<SniperEntity>of(SniperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(SniperEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SoldierEntity>> SOLDIER = register("soldier",
+			EntityType.Builder.<SoldierEntity>of(SoldierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SoldierEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<SpyEntity>> SPY = register("spy",
+			EntityType.Builder.<SpyEntity>of(SpyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TheTeamEntity>> THE_TEAM = register("projectile_the_team",
+			EntityType.Builder.<TheTeamEntity>of(TheTeamEntity::new, MobCategory.MISC).setCustomClientFactory(TheTeamEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -100,6 +134,11 @@ public class GbaModEntities {
 			TrueBrondbyEntity.init();
 			SuspiciusthingEntity.init();
 			GucciBePissedEntity.init();
+			ScoutEntity.init();
+			HeavyEntity.init();
+			SniperEntity.init();
+			SoldierEntity.init();
+			SpyEntity.init();
 		});
 	}
 
@@ -113,5 +152,10 @@ public class GbaModEntities {
 		event.put(TRUE_BRONDBY.get(), TrueBrondbyEntity.createAttributes().build());
 		event.put(SUSPICIUSTHING.get(), SuspiciusthingEntity.createAttributes().build());
 		event.put(GUCCI_BE_PISSED.get(), GucciBePissedEntity.createAttributes().build());
+		event.put(SCOUT.get(), ScoutEntity.createAttributes().build());
+		event.put(HEAVY.get(), HeavyEntity.createAttributes().build());
+		event.put(SNIPER.get(), SniperEntity.createAttributes().build());
+		event.put(SOLDIER.get(), SoldierEntity.createAttributes().build());
+		event.put(SPY.get(), SpyEntity.createAttributes().build());
 	}
 }

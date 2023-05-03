@@ -22,7 +22,7 @@ public class EnidePlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		double ide = 0;
-		ide = Mth.nextInt(RandomSource.create(), 1, 3);
+		ide = Mth.nextInt(RandomSource.create(), 1, 5);
 		if (ide == 1) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(GbaModItems.SIMONSIDE.get());
@@ -52,6 +52,14 @@ public class EnidePlayerFinishesUsingItemProcedure {
 			}
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("Hvad mon der vil ske hvis jeg slog nogle svenskere med en pind?"), (true));
+		} else if (ide == 5) {
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(GbaModItems.POINT.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal("Jeg har lyst til at pege p\u00E5 nogen"), (true));
 		}
 	}
 }

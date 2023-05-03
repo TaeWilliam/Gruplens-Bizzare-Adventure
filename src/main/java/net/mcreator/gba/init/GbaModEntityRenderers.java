@@ -14,8 +14,13 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.gba.client.renderer.TrueBrondbyRenderer;
 import net.mcreator.gba.client.renderer.SvenskerRenderer;
 import net.mcreator.gba.client.renderer.SuspiciusthingRenderer;
+import net.mcreator.gba.client.renderer.SpyRenderer;
+import net.mcreator.gba.client.renderer.SoldierRenderer;
+import net.mcreator.gba.client.renderer.SniperRenderer;
 import net.mcreator.gba.client.renderer.SenatorArmstaerkRenderer;
+import net.mcreator.gba.client.renderer.ScoutRenderer;
 import net.mcreator.gba.client.renderer.ROADROLLERRenderer;
+import net.mcreator.gba.client.renderer.HeavyRenderer;
 import net.mcreator.gba.client.renderer.GucciBePissedRenderer;
 import net.mcreator.gba.client.renderer.FriendlyGucciRenderer;
 import net.mcreator.gba.client.renderer.DAMPTROMLEERenderer;
@@ -40,5 +45,13 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.SUSPICIUSTHING.get(), SuspiciusthingRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.GUCCI_BE_PISSED.get(), GucciBePissedRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.POINT.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.SCOUT.get(), ScoutRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.HEAVY.get(), HeavyRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.HEAVY_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.SNIPERENTITY.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.SNIPER.get(), SniperRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.SOLDIER.get(), SoldierRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.SPY.get(), SpyRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.THE_TEAM.get(), ThrownItemRenderer::new);
 	}
 }

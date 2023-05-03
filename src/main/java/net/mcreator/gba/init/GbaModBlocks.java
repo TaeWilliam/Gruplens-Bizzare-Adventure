@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.gba.block.SverigePortalBlock;
 import net.mcreator.gba.block.SvenskerblockBlock;
+import net.mcreator.gba.block.GucciBlock;
 import net.mcreator.gba.block.EngishelvedePortalBlock;
 import net.mcreator.gba.block.EnFejlBlock;
 import net.mcreator.gba.block.DiarrheaBlock;
@@ -28,4 +29,5 @@ public class GbaModBlocks {
 	public static final RegistryObject<Block> EN_FEJL = REGISTRY.register("en_fejl", () -> new EnFejlBlock());
 	public static final RegistryObject<Block> CUM = REGISTRY.register("cum", () -> new CumBlock());
 	public static final RegistryObject<Block> CUM_DIMENTION_PORTAL = REGISTRY.register("cum_dimention_portal", () -> new CumDimentionPortalBlock());
+	public static final RegistryObject<Block> GUCCI = REGISTRY.register("gucci", () -> new GucciBlock());
 }

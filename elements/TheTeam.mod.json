@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "tf2",
+    "customModelName": "Normal",
+    "name": "The Team",
+    "specialInfo": [
+      "Tror du rent faktisk at du kan besejre holdet?"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 64,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:TheTeam"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "TheTeamProjectileHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "TheTeamProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "TheTeamProjectileHitsBlock"
+    }
+  }
+}

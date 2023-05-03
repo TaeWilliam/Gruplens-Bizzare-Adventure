@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gba:sverige"
+    },
+    "title": {
+      "translate": "advancements.gucciblockkk.title"
+    },
+    "description": {
+      "translate": "advancements.gucciblockkk.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "gucciblockkk": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "gba:svenskerblock"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gba:gucciblock"
+    ]
+  },
+  "parent": "gba:ahnej"
+}

@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "gba:the_team"
+    },
+    "title": {
+      "translate": "advancements.theteamishere.title"
+    },
+    "description": {
+      "translate": "advancements.theteamishere.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "theteamishere": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gunpowder"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gba:the_teame"
+    ]
+  },
+  "parent": "gba:engis_ynglings_vaben"
+}
