@@ -7,7 +7,9 @@
     "customModelName": "Normal",
     "name": "The Team",
     "specialInfo": [
-      "Tror du rent faktisk at du kan besejre holdet?"
+      "Tror du rent faktisk at du kan besejre holdet?",
+      "kast dette objekt for at bruge det",
+      "måske kan de hjælpe dig mod furries?"
     ],
     "creativeTab": {
       "value": "COMBAT"

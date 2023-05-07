@@ -32,10 +32,12 @@ import net.mcreator.gba.entity.ScoutEntity;
 import net.mcreator.gba.entity.STOPEntity;
 import net.mcreator.gba.entity.ROADROLLEREntity;
 import net.mcreator.gba.entity.PointEntity;
+import net.mcreator.gba.entity.HordeEntity;
 import net.mcreator.gba.entity.HeavyEntityProjectile;
 import net.mcreator.gba.entity.HeavyEntity;
 import net.mcreator.gba.entity.GucciBePissedEntity;
 import net.mcreator.gba.entity.GlockEntity;
+import net.mcreator.gba.entity.FurryEntity;
 import net.mcreator.gba.entity.FriendlyGucciEntity;
 import net.mcreator.gba.entity.EngiGlockEntity;
 import net.mcreator.gba.entity.DAMPTROMLEEEntity;
@@ -118,6 +120,12 @@ public class GbaModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<TheTeamEntity>> THE_TEAM = register("projectile_the_team",
 			EntityType.Builder.<TheTeamEntity>of(TheTeamEntity::new, MobCategory.MISC).setCustomClientFactory(TheTeamEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FurryEntity>> FURRY = register("furry",
+			EntityType.Builder.<FurryEntity>of(FurryEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FurryEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HordeEntity>> HORDE = register("projectile_horde",
+			EntityType.Builder.<HordeEntity>of(HordeEntity::new, MobCategory.MISC).setCustomClientFactory(HordeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -139,6 +147,7 @@ public class GbaModEntities {
 			SniperEntity.init();
 			SoldierEntity.init();
 			SpyEntity.init();
+			FurryEntity.init();
 		});
 	}
 
@@ -157,5 +166,6 @@ public class GbaModEntities {
 		event.put(SNIPER.get(), SniperEntity.createAttributes().build());
 		event.put(SOLDIER.get(), SoldierEntity.createAttributes().build());
 		event.put(SPY.get(), SpyEntity.createAttributes().build());
+		event.put(FURRY.get(), FurryEntity.createAttributes().build());
 	}
 }

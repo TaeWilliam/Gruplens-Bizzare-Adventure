@@ -30,6 +30,7 @@ import net.mcreator.gba.item.MystisknogleItem;
 import net.mcreator.gba.item.MysteriousBucketItem;
 import net.mcreator.gba.item.ModelbilItem;
 import net.mcreator.gba.item.LukasessvaerdItem;
+import net.mcreator.gba.item.HordeItem;
 import net.mcreator.gba.item.HjemmeforsvarspindItem;
 import net.mcreator.gba.item.GucciskorsItem;
 import net.mcreator.gba.item.GuccisabnebogItem;
@@ -46,6 +47,7 @@ import net.mcreator.gba.item.CumItem;
 import net.mcreator.gba.item.CumDimentionItem;
 import net.mcreator.gba.item.CAESARItem;
 import net.mcreator.gba.item.BurningBulletItem;
+import net.mcreator.gba.item.AshItem;
 import net.mcreator.gba.GbaMod;
 
 public class GbaModItems {
@@ -97,6 +99,9 @@ public class GbaModItems {
 	public static final RegistryObject<Item> SPY_SPAWN_EGG = REGISTRY.register("spy_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.SPY, -6750157, -16777012, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> THE_TEAM = REGISTRY.register("the_team", () -> new TheTeamItem());
 	public static final RegistryObject<Item> GUCCI = block(GbaModBlocks.GUCCI, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FURRY_SPAWN_EGG = REGISTRY.register("furry_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.FURRY, -16724788, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ASH = REGISTRY.register("ash", () -> new AshItem());
+	public static final RegistryObject<Item> HORDE = REGISTRY.register("horde", () -> new HordeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -16,6 +16,7 @@ import net.mcreator.gba.client.model.Modelgenerticdudde;
 import net.mcreator.gba.client.model.Modelcustom_model;
 import net.mcreator.gba.client.model.ModelSvensker;
 import net.mcreator.gba.client.model.ModelSuspicious_Entity;
+import net.mcreator.gba.client.model.ModelFurry;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class GbaModModels {
@@ -27,6 +28,7 @@ public class GbaModModels {
 		event.registerLayerDefinition(Modelsenator.LAYER_LOCATION, Modelsenator::createBodyLayer);
 		event.registerLayerDefinition(Modelgenerticdudde.LAYER_LOCATION, Modelgenerticdudde::createBodyLayer);
 		event.registerLayerDefinition(Modelcustom_model.LAYER_LOCATION, Modelcustom_model::createBodyLayer);
+		event.registerLayerDefinition(ModelFurry.LAYER_LOCATION, ModelFurry::createBodyLayer);
 		event.registerLayerDefinition(ModelSuspicious_Entity.LAYER_LOCATION, ModelSuspicious_Entity::createBodyLayer);
 	}
 }

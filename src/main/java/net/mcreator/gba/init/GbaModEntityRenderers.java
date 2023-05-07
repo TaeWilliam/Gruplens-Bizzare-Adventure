@@ -22,6 +22,7 @@ import net.mcreator.gba.client.renderer.ScoutRenderer;
 import net.mcreator.gba.client.renderer.ROADROLLERRenderer;
 import net.mcreator.gba.client.renderer.HeavyRenderer;
 import net.mcreator.gba.client.renderer.GucciBePissedRenderer;
+import net.mcreator.gba.client.renderer.FurryRenderer;
 import net.mcreator.gba.client.renderer.FriendlyGucciRenderer;
 import net.mcreator.gba.client.renderer.DAMPTROMLEERenderer;
 import net.mcreator.gba.client.renderer.BrondbyRenderer;
@@ -53,5 +54,7 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.SOLDIER.get(), SoldierRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.SPY.get(), SpyRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.THE_TEAM.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.FURRY.get(), FurryRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.HORDE.get(), ThrownItemRenderer::new);
 	}
 }

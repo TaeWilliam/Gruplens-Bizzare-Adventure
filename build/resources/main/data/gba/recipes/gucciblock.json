@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "gba:svenskerblock"
+    },
+    "1": {
+      "item": "gba:svenskerblock"
+    },
+    "2": {
+      "item": "gba:svenskerblock"
+    }
+  },
+  "result": {
+    "item": "gba:gucci",
+    "count": 1
+  }
+}

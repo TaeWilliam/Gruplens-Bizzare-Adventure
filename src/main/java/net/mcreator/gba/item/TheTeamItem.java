@@ -35,6 +35,8 @@ public class TheTeamItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("Tror du rent faktisk at du kan besejre holdet?"));
+		list.add(Component.literal("kast dette objekt for at bruge det"));
+		list.add(Component.literal("m\u00E5ske kan de hj\u00E6lpe dig mod furries?"));
 	}
 
 	@Override

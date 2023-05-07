@@ -63,7 +63,8 @@ public class HeavyEntity extends Monster implements RangedAttackMob {
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this).setAlertOthers());
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, FurryEntity.class, false, false));
+		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 64f) {
 			@Override
 			public boolean canContinueToUse() {
