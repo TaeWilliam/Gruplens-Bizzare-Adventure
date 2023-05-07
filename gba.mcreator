@@ -1928,6 +1928,20 @@
         ]
       },
       "path": "~/The team"
+    },
+    {
+      "name": "Gruplenrecipie",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplenrecipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/gruplenrecipie.json"
+        ]
+      },
+      "path": "~/The team"
     }
   ],
   "variable_elements": [],
