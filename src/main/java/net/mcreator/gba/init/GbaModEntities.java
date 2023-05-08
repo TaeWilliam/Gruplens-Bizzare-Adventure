@@ -31,6 +31,9 @@ import net.mcreator.gba.entity.SenatorArmstaerkEntity;
 import net.mcreator.gba.entity.ScoutEntity;
 import net.mcreator.gba.entity.STOPEntity;
 import net.mcreator.gba.entity.ROADROLLEREntity;
+import net.mcreator.gba.entity.PyroGunEntity;
+import net.mcreator.gba.entity.PyroEntityProjectile;
+import net.mcreator.gba.entity.PyroEntity;
 import net.mcreator.gba.entity.PointEntity;
 import net.mcreator.gba.entity.HordeEntity;
 import net.mcreator.gba.entity.HeavyEntityProjectile;
@@ -126,6 +129,14 @@ public class GbaModEntities {
 					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<HordeEntity>> HORDE = register("projectile_horde",
 			EntityType.Builder.<HordeEntity>of(HordeEntity::new, MobCategory.MISC).setCustomClientFactory(HordeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PyroGunEntity>> PYRO_GUN = register("projectile_pyro_gun",
+			EntityType.Builder.<PyroGunEntity>of(PyroGunEntity::new, MobCategory.MISC).setCustomClientFactory(PyroGunEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PyroEntity>> PYRO = register("pyro",
+			EntityType.Builder.<PyroEntity>of(PyroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PyroEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PyroEntityProjectile>> PYRO_PROJECTILE = register("projectile_pyro",
+			EntityType.Builder.<PyroEntityProjectile>of(PyroEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(PyroEntityProjectile::new).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -148,6 +159,7 @@ public class GbaModEntities {
 			SoldierEntity.init();
 			SpyEntity.init();
 			FurryEntity.init();
+			PyroEntity.init();
 		});
 	}
 
@@ -167,5 +179,6 @@ public class GbaModEntities {
 		event.put(SOLDIER.get(), SoldierEntity.createAttributes().build());
 		event.put(SPY.get(), SpyEntity.createAttributes().build());
 		event.put(FURRY.get(), FurryEntity.createAttributes().build());
+		event.put(PYRO.get(), PyroEntity.createAttributes().build());
 	}
 }

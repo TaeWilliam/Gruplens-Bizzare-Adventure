@@ -11,6 +11,7 @@ import net.mcreator.gba.entity.SpyEntity;
 import net.mcreator.gba.entity.SoldierEntity;
 import net.mcreator.gba.entity.SniperEntity;
 import net.mcreator.gba.entity.ScoutEntity;
+import net.mcreator.gba.entity.PyroEntity;
 import net.mcreator.gba.entity.HeavyEntity;
 
 public class TheTeamProjectileHitsBlockProcedure {
@@ -45,6 +46,13 @@ public class TheTeamProjectileHitsBlockProcedure {
 		}
 		if (world instanceof ServerLevel _level) {
 			Entity entityToSpawn = new SpyEntity(GbaModEntities.SPY.get(), _level);
+			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+			if (entityToSpawn instanceof Mob _mobToSpawn)
+				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
+			world.addFreshEntity(entityToSpawn);
+		}
+		if (world instanceof ServerLevel _level) {
+			Entity entityToSpawn = new PyroEntity(GbaModEntities.PYRO.get(), _level);
 			entityToSpawn.moveTo(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 			if (entityToSpawn instanceof Mob _mobToSpawn)
 				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);

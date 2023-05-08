@@ -20,6 +20,7 @@ import net.mcreator.gba.client.renderer.SniperRenderer;
 import net.mcreator.gba.client.renderer.SenatorArmstaerkRenderer;
 import net.mcreator.gba.client.renderer.ScoutRenderer;
 import net.mcreator.gba.client.renderer.ROADROLLERRenderer;
+import net.mcreator.gba.client.renderer.PyroRenderer;
 import net.mcreator.gba.client.renderer.HeavyRenderer;
 import net.mcreator.gba.client.renderer.GucciBePissedRenderer;
 import net.mcreator.gba.client.renderer.FurryRenderer;
@@ -56,5 +57,8 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.THE_TEAM.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.FURRY.get(), FurryRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.HORDE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.PYRO_GUN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.PYRO.get(), PyroRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.PYRO_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

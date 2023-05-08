@@ -25,6 +25,7 @@ import net.mcreator.gba.item.SimonsideItem;
 import net.mcreator.gba.item.SenatorenItem;
 import net.mcreator.gba.item.STOPItem;
 import net.mcreator.gba.item.ROADROLLERItem;
+import net.mcreator.gba.item.PyroGunItem;
 import net.mcreator.gba.item.PointItem;
 import net.mcreator.gba.item.MystisknogleItem;
 import net.mcreator.gba.item.MysteriousBucketItem;
@@ -102,6 +103,8 @@ public class GbaModItems {
 	public static final RegistryObject<Item> FURRY_SPAWN_EGG = REGISTRY.register("furry_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.FURRY, -16724788, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> ASH = REGISTRY.register("ash", () -> new AshItem());
 	public static final RegistryObject<Item> HORDE = REGISTRY.register("horde", () -> new HordeItem());
+	public static final RegistryObject<Item> PYRO_GUN = REGISTRY.register("pyro_gun", () -> new PyroGunItem());
+	public static final RegistryObject<Item> PYRO_SPAWN_EGG = REGISTRY.register("pyro_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.PYRO, -3407821, -13421569, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -61,7 +61,8 @@ public class FurryEntity extends Monster {
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, SniperEntity.class, false, false));
 		this.targetSelector.addGoal(8, new NearestAttackableTargetGoal(this, SoldierEntity.class, false, false));
 		this.targetSelector.addGoal(9, new NearestAttackableTargetGoal(this, SpyEntity.class, false, false));
-		this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(10, new NearestAttackableTargetGoal(this, PyroEntity.class, false, false));
+		this.targetSelector.addGoal(11, new NearestAttackableTargetGoal(this, Player.class, false, false));
 	}
 
 	@Override
