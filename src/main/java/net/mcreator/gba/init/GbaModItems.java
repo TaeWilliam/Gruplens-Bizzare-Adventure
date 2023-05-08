@@ -42,6 +42,7 @@ import net.mcreator.gba.item.GruplenItem;
 import net.mcreator.gba.item.GlockItem;
 import net.mcreator.gba.item.EnideItem;
 import net.mcreator.gba.item.EngishelvedeItem;
+import net.mcreator.gba.item.EngisPvPGlockItem;
 import net.mcreator.gba.item.EngiGlockItem;
 import net.mcreator.gba.item.DrikkenItem;
 import net.mcreator.gba.item.DiarrheaItem;
@@ -112,6 +113,7 @@ public class GbaModItems {
 	public static final RegistryObject<Item> FURRYMINE = block(GbaModBlocks.FURRYMINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> THE_WORST_MINE = block(GbaModBlocks.THE_WORST_MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> ENGI_MINE = block(GbaModBlocks.ENGI_MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ENGIS_PV_P_GLOCK = REGISTRY.register("engis_pv_p_glock", () -> new EngisPvPGlockItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

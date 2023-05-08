@@ -23,7 +23,7 @@ public class EnidePlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		double ide = 0;
-		ide = Mth.nextInt(RandomSource.create(), 1, 7);
+		ide = Mth.nextInt(RandomSource.create(), 1, 8);
 		if (ide == 1) {
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(GbaModItems.SIMONSIDE.get());
@@ -112,6 +112,23 @@ public class EnidePlayerFinishesUsingItemProcedure {
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(GbaModBlocks.THE_WORST_MINE.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+		} else if (ide == 8) {
+			if (entity instanceof Player _player && !_player.level.isClientSide())
+				_player.displayClientMessage(Component.literal("Hvad mon dette objekt g\u00F8r?"), (true));
+			if (entity instanceof ServerPlayer _player) {
+				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("gba:pvp_update"));
+				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+				if (!_ap.isDone()) {
+					Iterator _iterator = _ap.getRemainingCriteria().iterator();
+					while (_iterator.hasNext())
+						_player.getAdvancements().award(_adv, (String) _iterator.next());
+				}
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(GbaModItems.ENGIS_PV_P_GLOCK.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

@@ -36,6 +36,7 @@ import net.mcreator.gba.entity.PyroGunEntity;
 import net.mcreator.gba.entity.PyroEntityProjectile;
 import net.mcreator.gba.entity.PyroEntity;
 import net.mcreator.gba.entity.PointEntity;
+import net.mcreator.gba.entity.InvisibleCreeperEntity;
 import net.mcreator.gba.entity.HordeEntity;
 import net.mcreator.gba.entity.HeavyEntityProjectile;
 import net.mcreator.gba.entity.HeavyEntity;
@@ -44,6 +45,7 @@ import net.mcreator.gba.entity.GucciBePissedEntity;
 import net.mcreator.gba.entity.GlockEntity;
 import net.mcreator.gba.entity.FurryEntity;
 import net.mcreator.gba.entity.FriendlyGucciEntity;
+import net.mcreator.gba.entity.EngisPvPGlockEntity;
 import net.mcreator.gba.entity.EngiGlockEntity;
 import net.mcreator.gba.entity.DAMPTROMLEEEntity;
 import net.mcreator.gba.entity.CAESAREntity;
@@ -143,6 +145,12 @@ public class GbaModEntities {
 	public static final RegistryObject<EntityType<UncontrollableMininukeEntity>> UNCONTROLLABLE_MININUKE = register("projectile_uncontrollable_mininuke",
 			EntityType.Builder.<UncontrollableMininukeEntity>of(UncontrollableMininukeEntity::new, MobCategory.MISC).setCustomClientFactory(UncontrollableMininukeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<InvisibleCreeperEntity>> INVISIBLE_CREEPER = register("invisible_creeper",
+			EntityType.Builder.<InvisibleCreeperEntity>of(InvisibleCreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(InvisibleCreeperEntity::new)
+
+					.sized(0.6f, 1.7f));
+	public static final RegistryObject<EntityType<EngisPvPGlockEntity>> ENGIS_PV_P_GLOCK = register("projectile_engis_pv_p_glock",
+			EntityType.Builder.<EngisPvPGlockEntity>of(EngisPvPGlockEntity::new, MobCategory.MISC).setCustomClientFactory(EngisPvPGlockEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -166,6 +174,7 @@ public class GbaModEntities {
 			SpyEntity.init();
 			FurryEntity.init();
 			PyroEntity.init();
+			InvisibleCreeperEntity.init();
 		});
 	}
 
@@ -186,5 +195,6 @@ public class GbaModEntities {
 		event.put(SPY.get(), SpyEntity.createAttributes().build());
 		event.put(FURRY.get(), FurryEntity.createAttributes().build());
 		event.put(PYRO.get(), PyroEntity.createAttributes().build());
+		event.put(INVISIBLE_CREEPER.get(), InvisibleCreeperEntity.createAttributes().build());
 	}
 }

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "gba:engis_pv_p_glock"
+    },
+    "title": {
+      "translate": "advancements.pvp_update.title"
+    },
+    "description": {
+      "translate": "advancements.pvp_update.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "pvp_update": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0,
+    "recipes": [
+      "gba:engigun"
+    ]
+  },
+  "parent": "gba:engis_ynglings_vaben"
+}

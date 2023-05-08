@@ -21,6 +21,7 @@ import net.mcreator.gba.client.renderer.SenatorArmstaerkRenderer;
 import net.mcreator.gba.client.renderer.ScoutRenderer;
 import net.mcreator.gba.client.renderer.ROADROLLERRenderer;
 import net.mcreator.gba.client.renderer.PyroRenderer;
+import net.mcreator.gba.client.renderer.InvisibleCreeperRenderer;
 import net.mcreator.gba.client.renderer.HeavyRenderer;
 import net.mcreator.gba.client.renderer.GucciBePissedRenderer;
 import net.mcreator.gba.client.renderer.FurryRenderer;
@@ -62,5 +63,7 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.PYRO.get(), PyroRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.PYRO_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.UNCONTROLLABLE_MININUKE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.INVISIBLE_CREEPER.get(), InvisibleCreeperRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.ENGIS_PV_P_GLOCK.get(), ThrownItemRenderer::new);
 	}
 }
