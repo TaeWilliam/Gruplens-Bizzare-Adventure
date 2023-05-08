@@ -19,6 +19,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.gba.entity.WarmGlockEntity;
+import net.mcreator.gba.entity.UncontrollableMininukeEntity;
 import net.mcreator.gba.entity.TrueBrondbyEntity;
 import net.mcreator.gba.entity.TheTeamEntity;
 import net.mcreator.gba.entity.SvenskerEntity;
@@ -38,6 +39,7 @@ import net.mcreator.gba.entity.PointEntity;
 import net.mcreator.gba.entity.HordeEntity;
 import net.mcreator.gba.entity.HeavyEntityProjectile;
 import net.mcreator.gba.entity.HeavyEntity;
+import net.mcreator.gba.entity.GucciBePissedEntityProjectile;
 import net.mcreator.gba.entity.GucciBePissedEntity;
 import net.mcreator.gba.entity.GlockEntity;
 import net.mcreator.gba.entity.FurryEntity;
@@ -95,6 +97,9 @@ public class GbaModEntities {
 			EntityType.Builder.<GucciBePissedEntity>of(GucciBePissedEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GucciBePissedEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GucciBePissedEntityProjectile>> GUCCI_BE_PISSED_PROJECTILE = register("projectile_gucci_be_pissed",
+			EntityType.Builder.<GucciBePissedEntityProjectile>of(GucciBePissedEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1)
+					.setCustomClientFactory(GucciBePissedEntityProjectile::new).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PointEntity>> POINT = register("projectile_point",
 			EntityType.Builder.<PointEntity>of(PointEntity::new, MobCategory.MISC).setCustomClientFactory(PointEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ScoutEntity>> SCOUT = register("scout",
@@ -132,11 +137,12 @@ public class GbaModEntities {
 	public static final RegistryObject<EntityType<PyroGunEntity>> PYRO_GUN = register("projectile_pyro_gun",
 			EntityType.Builder.<PyroGunEntity>of(PyroGunEntity::new, MobCategory.MISC).setCustomClientFactory(PyroGunEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PyroEntity>> PYRO = register("pyro",
-			EntityType.Builder.<PyroEntity>of(PyroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PyroEntity::new)
-
-					.sized(0.6f, 1.8f));
+			EntityType.Builder.<PyroEntity>of(PyroEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PyroEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<PyroEntityProjectile>> PYRO_PROJECTILE = register("projectile_pyro",
 			EntityType.Builder.<PyroEntityProjectile>of(PyroEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(PyroEntityProjectile::new).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<UncontrollableMininukeEntity>> UNCONTROLLABLE_MININUKE = register("projectile_uncontrollable_mininuke",
+			EntityType.Builder.<UncontrollableMininukeEntity>of(UncontrollableMininukeEntity::new, MobCategory.MISC).setCustomClientFactory(UncontrollableMininukeEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

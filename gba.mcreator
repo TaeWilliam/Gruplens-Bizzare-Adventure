@@ -1408,7 +1408,8 @@
           "src/main/java/net/mcreator/gba/client/renderer/GucciBePissedRenderer.java",
           "src/main/java/net/mcreator/gba/entity/GucciBePissedEntity.java",
           "src/main/resources/assets/gba/models/item/gucci_be_pissed_spawn_egg.json",
-          "src/main/resources/data/gba/forge/biome_modifier/gucci_be_pissed_biome_modifier.json"
+          "src/main/resources/data/gba/forge/biome_modifier/gucci_be_pissed_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/entity/GucciBePissedEntityProjectile.java"
         ]
       },
       "path": "~/stuff"
@@ -1995,6 +1996,419 @@
         ]
       },
       "path": "~/The team"
+    },
+    {
+      "name": "UncontrollableMininuke",
+      "type": "rangeditem",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uncontrollable_mininuke",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/uncontrollable_mininuke.json",
+          "src/main/java/net/mcreator/gba/entity/UncontrollableMininukeEntity.java",
+          "src/main/java/net/mcreator/gba/item/UncontrollableMininukeItem.java"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "UncontrollableMininukeProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uncontrollable_mininuke_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/UncontrollableMininukeProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Bnuke",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bnuke",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/bnuke.json"
+        ]
+      },
+      "path": "~/stuff"
+    },
+    {
+      "name": "Terror",
+      "type": "achievement",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "terror",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/terror.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "MineEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mine_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/MineEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Mine",
+      "type": "block",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/block/MineBlock.java",
+          "src/main/resources/assets/gba/models/item/mine.json",
+          "src/main/resources/assets/gba/blockstates/mine.json",
+          "src/main/resources/assets/gba/models/block/mine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "LightningMineEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_mine_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/LightningMineEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "LightningMine",
+      "type": "block",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightning_mine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/lightning_mine.json",
+          "src/main/java/net/mcreator/gba/block/LightningMineBlock.java",
+          "src/main/resources/assets/gba/models/block/lightning_mine.json",
+          "src/main/resources/assets/gba/blockstates/lightning_mine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Furrymine",
+      "type": "block",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furrymine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/block/FurrymineBlock.java",
+          "src/main/resources/assets/gba/models/block/furrymine.json",
+          "src/main/resources/assets/gba/blockstates/furrymine.json",
+          "src/main/resources/assets/gba/models/item/furrymine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "TheWorstMineEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_worst_mine_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/TheWorstMineEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "TheWorstMine",
+      "type": "block",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_worst_mine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/block/the_worst_mine.json",
+          "src/main/java/net/mcreator/gba/block/TheWorstMineBlock.java",
+          "src/main/resources/assets/gba/models/item/the_worst_mine.json",
+          "src/main/resources/assets/gba/blockstates/the_worst_mine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "EngiMineEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engi_mine_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/EngiMineEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "EngiMine",
+      "type": "block",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engi_mine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/block/EngiMineBlock.java",
+          "src/main/resources/assets/gba/blockstates/engi_mine.json",
+          "src/main/resources/assets/gba/models/item/engi_mine.json",
+          "src/main/resources/assets/gba/models/block/engi_mine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Landmines",
+      "type": "achievement",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "landmines",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/landmines.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Normalmine",
+      "type": "recipe",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "normalmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/normalmine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Lightninmine",
+      "type": "recipe",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightninmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/lightninmine.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "FurryMinee",
+      "type": "recipe",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furry_minee",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/furry_minee.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "FurrymineEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furrymine_entity_collides_in_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/FurrymineEntityCollidesInTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Engiminee",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "engiminee",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/engiminee.json"
+        ]
+      },
+      "path": "~/Ideer"
+    },
+    {
+      "name": "Alexmine",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alexmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/alexmine.json"
+        ]
+      },
+      "path": "~/Ideer"
     }
   ],
   "variable_elements": [],
@@ -2099,6 +2513,7 @@
       "subtitles.gruplensang4": "",
       "subtitles.gruplensang3": "",
       "item.gba.enide": "Enide",
+      "advancements.landmines.title": "Landmines",
       "advancements.gucciblockkk.descr": "NO WAY GUCCIBLOCK",
       "entity.gba.svensker": "Svensker",
       "advancements.denforkerteide.title": "Den forkerte ide",
@@ -2116,6 +2531,7 @@
       "subtitles.caesar": "",
       "item.gba.hjemmeforsvarspind": "Hjemmeforsvarspind",
       "item.gba.heavy_spawn_egg": "Heavy Spawn Egg",
+      "block.gba.mine": "Mine",
       "advancements.senatoren_er_t_ilbage.descr": "I må stoppe ham",
       "item.gba.sniper_spawn_egg": "Sniper Spawn Egg",
       "item.gba.guccis_bog": "Guccis Bog",
@@ -2134,12 +2550,15 @@
       "item.gba.mysterious_bucket": "Mysterious Bucket",
       "biome.gba.hell_2": "Hell 2",
       "entity.gba.friendly_gucci": "Friendly Gucci",
+      "item.gba.uncontrollable_mininuke": "Uncontrollable Mininuke",
       "biome.gba.skane": "Skane",
       "entity.gba.scout": "Scout",
       "item.gba.brondby_spawn_egg": "Brondby Spawn Egg",
       "advancements.denforkerteide.descr": "Din ide er en fejl",
       "item.gba.roadroller": "ROADROLLER",
+      "advancements.terror.descr": "Har du nogle sinde haft lyst til at bygge en mininuke?",
       "advancements.theteamishere.title": "Holdet er samlet",
+      "advancements.landmines.descr": "Tid til at irriterre alle",
       "item.gba.furry_spawn_egg": "Furry Spawn Egg",
       "item.gba.pyro_spawn_egg": "Pyro Spawn Egg",
       "block.gba.en_fejl": "En Fejl",
@@ -2150,8 +2569,10 @@
       "entity.gba.soldier": "Soldier",
       "item.gba.gucciskors": "Gucciskors",
       "item.gba.cum_bucket": "Cum Bucket",
+      "block.gba.lightning_mine": "Lightning Mine",
       "item.gba.engishelvede": "Engis helvede",
       "item.gba.soldier_spawn_egg": "Soldier Spawn Egg",
+      "block.gba.furrymine": "Furrymine",
       "item.gba.simonside": "Simonside",
       "item.gba.drikken": "Drikken",
       "item.gba.modelbil": "Modelbil",
@@ -2171,6 +2592,7 @@
       "advancements.envenligpraest.descr": "Hidkald din ven",
       "item.gba.friendly_gucci_spawn_egg": "Friendly Gucci Spawn Egg",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
+      "block.gba.the_worst_mine": "The Worst Mine",
       "item.gba.ash": "Ash",
       "subtitles.ihaveadream": "",
       "subtitles.detblvnodttilatvr": "",
@@ -2190,11 +2612,13 @@
       "item.gba.gruplen": "Gruplen",
       "advancements.engis_ynglings_vaben.descr": "hvad venter du på? der skal craftes",
       "item.gba.senatoren": "Senatoren",
+      "block.gba.engi_mine": "Engi Mine",
       "block.gba.svenskerblock": "Svenskerblock",
       "subtitles.nanomachine": "",
       "item.gba.spy_spawn_egg": "Spy Spawn Egg",
       "block.gba.diarrhea": "Diarrhea",
       "advancements.minforbandede_verden.title": "Min forbandede Verden",
+      "advancements.terror.title": "Terror",
       "advancements.ahnej.descr": "Plz ikke gør det"
     }
   },

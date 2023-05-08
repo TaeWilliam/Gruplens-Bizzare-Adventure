@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345"
+  ],
+  "key": {
+    "1": {
+      "item": "gba:mysterious_bucket"
+    },
+    "3": {
+      "item": "minecraft:dirt"
+    },
+    "4": {
+      "item": "minecraft:gunpowder"
+    },
+    "5": {
+      "item": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "item": "gba:engi_mine",
+    "count": 1
+  }
+}

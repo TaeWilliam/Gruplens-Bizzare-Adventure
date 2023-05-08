@@ -1408,7 +1408,8 @@
           "src/main/java/net/mcreator/gba/client/renderer/GucciBePissedRenderer.java",
           "src/main/java/net/mcreator/gba/entity/GucciBePissedEntity.java",
           "src/main/resources/assets/gba/models/item/gucci_be_pissed_spawn_egg.json",
-          "src/main/resources/data/gba/forge/biome_modifier/gucci_be_pissed_biome_modifier.json"
+          "src/main/resources/data/gba/forge/biome_modifier/gucci_be_pissed_biome_modifier.json",
+          "src/main/java/net/mcreator/gba/entity/GucciBePissedEntityProjectile.java"
         ]
       },
       "path": "~/stuff"
@@ -1793,6 +1794,208 @@
         ]
       },
       "path": "~/Bosses"
+    },
+    {
+      "name": "Furry",
+      "type": "livingentity",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "furry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/furry_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/entity/FurryEntity.java",
+          "src/main/java/net/mcreator/gba/client/renderer/FurryRenderer.java"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Ash",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/AshItem.java",
+          "src/main/resources/assets/gba/models/item/ash.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Gun",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/gun.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Horde",
+      "type": "rangeditem",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horde",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/gba/models/item/horde.json",
+          "src/main/java/net/mcreator/gba/entity/HordeEntity.java",
+          "src/main/java/net/mcreator/gba/item/HordeItem.java"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "HordeProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horde_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/HordeProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Army",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "army",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/army.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Gruplenm",
+      "type": "achievement",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplenm",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/gruplenm.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Denforkerteide",
+      "type": "achievement",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "denforkerteide",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/advancements/denforkerteide.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Gruplenrecipie",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gruplenrecipie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/gba/recipes/gruplenrecipie.json"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "PyroGunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyro_gun_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/procedures/PyroGunRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "PyroGun",
+      "type": "rangeditem",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyro_gun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/item/PyroGunItem.java",
+          "src/main/resources/assets/gba/models/item/pyro_gun.json",
+          "src/main/java/net/mcreator/gba/entity/PyroGunEntity.java"
+        ]
+      },
+      "path": "~/The team"
+    },
+    {
+      "name": "Pyro",
+      "type": "livingentity",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/gba/client/renderer/PyroRenderer.java",
+          "src/main/resources/assets/gba/models/item/pyro_spawn_egg.json",
+          "src/main/java/net/mcreator/gba/entity/PyroEntityProjectile.java",
+          "src/main/java/net/mcreator/gba/entity/PyroEntity.java"
+        ]
+      },
+      "path": "~/The team"
     }
   ],
   "variable_elements": [],
@@ -1888,100 +2091,111 @@
   ],
   "language_map": {
     "en_us": {
-      "item.gba.brondby_spawn_egg": "Brondby Spawn Egg",
       "advancements.hvaderdergaltmeddig.descr": "Hvorfor ville du nogensinde konsumere denne umoralske drik, Jeg har ligget søvnløs i flere måneder efter jeg har lavet dette item og jeg fortryder mine handlinger, Jeg skjulte opskirften så ingen skulle opdage dette forfærdelige objekt, og alligevel er du her lige nu, hvorfor er du sådan, hvorfor har du lavet den, hvorfor skal du bringe mine traumaer op igen?, Hvorfor kan du ikke bare spille som en normal person og ikke indtage substanser som ikke burde eksistere, hvis ikke Gucci havede taget simons kræfter vil både du og dette forfærdelige objekt for længst have ophørt med at eksistere, plz lad vær med at sætte spanden sammen med en diarrhea spand",
-      "item.gba.roadroller": "ROADROLLER",
+      "entity.gba.pyro": "Pyro",
       "item.gba.burning_bullet": "Burning Bullet",
-      "advancements.theteamishere.title": "Holdet er samlet",
       "subtitles.gruplensang5": "",
       "advancements.ahnej.title": "Ahnej",
-      "subtitles.gruplensang4": "",
       "block.gba.gucci": "Gucci",
-      "item.gba.enide": "Enide",
+      "subtitles.gruplensang4": "",
       "subtitles.gruplensang3": "",
+      "item.gba.enide": "Enide",
       "advancements.gucciblockkk.descr": "NO WAY GUCCIBLOCK",
-      "block.gba.en_fejl": "En Fejl",
-      "item.gba.stop": "STOP",
       "entity.gba.svensker": "Svensker",
-      "entity.gba.sniper": "Sniper",
+      "advancements.denforkerteide.title": "Den forkerte ide",
       "item.gba.damptromlee_spawn_egg": "DAMPTROMLEE Spawn Egg",
-      "entity.gba.soldier": "Soldier",
+      "item.gba.pyro_gun": "Pyro Gun",
       "subtitles.gruplensang2": "",
       "item.gba.guccisabnebog": "Guccisabnebog",
-      "item.gba.gucciskors": "Gucciskors",
       "item.gba.diarrhea_bucket": "Diarrhea Bucket",
       "subtitles.steelpipe": "",
+      "subtitles.gruplen_sang1": "",
+      "entity.gba.suspiciusthing": "Suspiciusthing",
+      "advancements.theteamishere.descr": "Kan du besejre holdet?",
+      "entity.gba.true_brondby": "Brondby",
+      "subtitles.roadroller": "",
+      "subtitles.caesar": "",
+      "item.gba.hjemmeforsvarspind": "Hjemmeforsvarspind",
+      "item.gba.heavy_spawn_egg": "Heavy Spawn Egg",
+      "advancements.senatoren_er_t_ilbage.descr": "I må stoppe ham",
+      "item.gba.sniper_spawn_egg": "Sniper Spawn Egg",
+      "item.gba.guccis_bog": "Guccis Bog",
+      "item.gba.true_brondby_spawn_egg": "Brondby Spawn Egg",
+      "item.gba.lukasessvaerd": "Lukasessvaerd",
+      "fluid.gba.cum": "Cum",
+      "entity.gba.heavy": "Heavy",
+      "item.gba.caesar": "CAESAR",
+      "fluid.gba.diarrhea": "Diarrhea",
+      "entity.gba.gucci_be_pissed": "Gucci Be Pissed",
+      "advancements.senatoren_er_t_ilbage.title": "Senatoren Er TIlbage",
+      "item.gba.sniperentity": "Sniperentity",
+      "item.gba.gruplensider": "Gruplensider",
+      "item.gba.gucci_be_pissed_spawn_egg": "Gucci Be Pissed Spawn Egg",
+      "item.gba.suspiciusthing_spawn_egg": "Suspiciusthing Spawn Egg",
+      "item.gba.mysterious_bucket": "Mysterious Bucket",
+      "biome.gba.hell_2": "Hell 2",
+      "entity.gba.friendly_gucci": "Friendly Gucci",
+      "biome.gba.skane": "Skane",
+      "entity.gba.scout": "Scout",
+      "item.gba.brondby_spawn_egg": "Brondby Spawn Egg",
+      "advancements.denforkerteide.descr": "Din ide er en fejl",
+      "item.gba.roadroller": "ROADROLLER",
+      "advancements.theteamishere.title": "Holdet er samlet",
+      "item.gba.furry_spawn_egg": "Furry Spawn Egg",
+      "item.gba.pyro_spawn_egg": "Pyro Spawn Egg",
+      "block.gba.en_fejl": "En Fejl",
+      "item.gba.stop": "STOP",
+      "item.gba.horde": "Sukkertoppens Hemmelige Hummer Society",
+      "entity.gba.furry": "Furry",
+      "entity.gba.sniper": "Sniper",
+      "entity.gba.soldier": "Soldier",
+      "item.gba.gucciskors": "Gucciskors",
       "item.gba.cum_bucket": "Cum Bucket",
       "item.gba.engishelvede": "Engis helvede",
-      "subtitles.gruplen_sang1": "",
       "item.gba.soldier_spawn_egg": "Soldier Spawn Egg",
       "item.gba.simonside": "Simonside",
       "item.gba.drikken": "Drikken",
-      "entity.gba.suspiciusthing": "Suspiciusthing",
       "item.gba.modelbil": "Modelbil",
-      "advancements.theteamishere.descr": "Kan du besejre holdet?",
       "item.gba.warm_glock": "Warm Glock",
-      "entity.gba.true_brondby": "Brondby",
       "item.gba.cum_dimention": "Cum Dimention Portal Igniter",
       "advancements.minforbandede_verden.descr": "...",
       "entity.gba.damptromlee": "DAMPTROMLEE",
       "advancements.engis_ynglings_vaben.title": "Engis Ynglings Vaben",
       "biome.gba.hrell": "Hrell",
-      "subtitles.roadroller": "",
-      "subtitles.caesar": "",
       "item.gba.point": "Point",
       "advancements.gucciblockkk.title": "GUCCIBLOCKKK",
       "item.gba.glock": "Glock",
       "item.gba.svensker_spawn_egg": "Svensker Spawn Egg",
-      "item.gba.hjemmeforsvarspind": "Hjemmeforsvarspind",
-      "item.gba.heavy_spawn_egg": "Heavy Spawn Egg",
       "item.gba.the_team": "The Team",
       "advancements.hvaderdergaltmeddig.title": "HVAD ER DER GALT MED DIG!!!",
       "entity.gba.senator_armstaerk": "Senator Armstaerk",
-      "advancements.senatoren_er_t_ilbage.descr": "I må stoppe ham",
-      "item.gba.guccis_bog": "Guccis Bog",
-      "item.gba.sniper_spawn_egg": "Sniper Spawn Egg",
-      "item.gba.true_brondby_spawn_egg": "Brondby Spawn Egg",
       "advancements.envenligpraest.descr": "Hidkald din ven",
       "item.gba.friendly_gucci_spawn_egg": "Friendly Gucci Spawn Egg",
-      "item.gba.lukasessvaerd": "Lukasessvaerd",
       "advancements.age_of_fire.descr": "Tilykke, du har fundet ild",
-      "fluid.gba.cum": "Cum",
+      "item.gba.ash": "Ash",
       "subtitles.ihaveadream": "",
       "subtitles.detblvnodttilatvr": "",
-      "entity.gba.heavy": "Heavy",
       "entity.gba.spy": "Spy",
       "advancements.envenligpraest.title": "Envenligpraest",
-      "item.gba.caesar": "CAESAR",
       "item.gba.scout_spawn_egg": "Scout Spawn Egg",
+      "advancements.gruplenm.descr": "Det er tid",
       "block.gba.cum": "Cum",
-      "fluid.gba.diarrhea": "Diarrhea",
       "item.gba.engi_glock": "Engi Glock",
       "advancements.age_of_fire.title": "Age Of Fire",
-      "entity.gba.gucci_be_pissed": "Gucci Be Pissed",
-      "advancements.senatoren_er_t_ilbage.title": "Senatoren Er TIlbage",
-      "item.gba.sniperentity": "Sniperentity",
       "item.gba.senator_armstaerk_spawn_egg": "Senator Armstaerk Spawn Egg",
       "item.gba.sverige": "Sverige Portal Igniter",
-      "item.gba.gruplensider": "Gruplensider",
-      "item.gba.gucci_be_pissed_spawn_egg": "Gucci Be Pissed Spawn Egg",
+      "advancements.gruplenm.title": "Gruplen",
       "item.gba.small_bullet": "Small Bullet",
       "item.gba.mystisknogle": "Mystisknogle",
-      "item.gba.mysterious_bucket": "Mysterious Bucket",
       "entity.gba.brondby": "Brondby",
-      "item.gba.suspiciusthing_spawn_egg": "Suspiciusthing Spawn Egg",
       "item.gba.gruplen": "Gruplen",
-      "biome.gba.hell_2": "Hell 2",
       "advancements.engis_ynglings_vaben.descr": "hvad venter du på? der skal craftes",
       "item.gba.senatoren": "Senatoren",
-      "entity.gba.friendly_gucci": "Friendly Gucci",
       "block.gba.svenskerblock": "Svenskerblock",
       "subtitles.nanomachine": "",
       "item.gba.spy_spawn_egg": "Spy Spawn Egg",
       "block.gba.diarrhea": "Diarrhea",
       "advancements.minforbandede_verden.title": "Min forbandede Verden",
-      "biome.gba.skane": "Skane",
-      "entity.gba.scout": "Scout",
       "advancements.ahnej.descr": "Plz ikke gør det"
     }
   },

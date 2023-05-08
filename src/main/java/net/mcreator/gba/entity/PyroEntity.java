@@ -6,6 +6,7 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.minecraft.world.entity.monster.Monster;
@@ -26,6 +27,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.gba.init.GbaModItems;
 import net.mcreator.gba.init.GbaModEntities;
 
 public class PyroEntity extends Monster implements RangedAttackMob {
@@ -35,7 +37,7 @@ public class PyroEntity extends Monster implements RangedAttackMob {
 
 	public PyroEntity(EntityType<PyroEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 30;
 		setNoAi(false);
 		setPersistenceRequired();
 	}
@@ -77,6 +79,11 @@ public class PyroEntity extends Monster implements RangedAttackMob {
 		return false;
 	}
 
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(GbaModItems.ASH.get()));
+	}
+
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
@@ -85,6 +92,13 @@ public class PyroEntity extends Monster implements RangedAttackMob {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source == DamageSource.FALL)
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override
@@ -103,10 +117,11 @@ public class PyroEntity extends Monster implements RangedAttackMob {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
-		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.MAX_HEALTH, 50);
+		builder = builder.add(Attributes.ARMOR, 5);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 64);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		return builder;
 	}
 }

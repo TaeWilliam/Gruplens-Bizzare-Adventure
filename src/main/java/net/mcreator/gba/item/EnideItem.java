@@ -27,6 +27,7 @@ public class EnideItem extends Item {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("Du har f\u00E5et en fantastisk ide!!!"));
 		list.add(Component.literal("spis dette objekt"));
+		list.add(Component.literal("hvis du spiser dette objekt f\u00E5r du et achievement der giver dig en ny crafting recipie og en tekst i chatten der giver dig et hint"));
 	}
 
 	@Override

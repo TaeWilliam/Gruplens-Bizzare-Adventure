@@ -46,6 +46,7 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.TRUE_BRONDBY.get(), TrueBrondbyRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.SUSPICIUSTHING.get(), SuspiciusthingRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.GUCCI_BE_PISSED.get(), GucciBePissedRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.GUCCI_BE_PISSED_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.POINT.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.SCOUT.get(), ScoutRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.HEAVY.get(), HeavyRenderer::new);
@@ -60,5 +61,6 @@ public class GbaModEntityRenderers {
 		event.registerEntityRenderer(GbaModEntities.PYRO_GUN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.PYRO.get(), PyroRenderer::new);
 		event.registerEntityRenderer(GbaModEntities.PYRO_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(GbaModEntities.UNCONTROLLABLE_MININUKE.get(), ThrownItemRenderer::new);
 	}
 }

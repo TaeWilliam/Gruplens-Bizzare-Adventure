@@ -116,7 +116,12 @@ public class GucciBePissedEntity extends Monster implements RangedAttackMob {
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		EngiGlockEntity.shoot(this, target);
+		GucciBePissedEntityProjectile entityarrow = new GucciBePissedEntityProjectile(GbaModEntities.GUCCI_BE_PISSED_PROJECTILE.get(), this, this.level);
+		double d0 = target.getY() + target.getEyeHeight() - 1.1;
+		double d1 = target.getX() - this.getX();
+		double d3 = target.getZ() - this.getZ();
+		entityarrow.shoot(d1, d0 - entityarrow.getY() + Math.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.6F, 12.0F);
+		level.addFreshEntity(entityarrow);
 	}
 
 	public static void init() {

@@ -26,7 +26,8 @@
     "damageVsEntity": 0.0,
     "specialInfo": [
       "Du har fået en fantastisk ide!!!",
-      "spis dette objekt"
+      "spis dette objekt",
+      "hvis du spiser dette objekt får du et achievement der giver dig en ny crafting recipie og en tekst i chatten der giver dig et hint"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

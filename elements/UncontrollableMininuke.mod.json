@@ -1,0 +1,48 @@
+{
+  "_fv": 39,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "nuk",
+    "customModelName": "Normal",
+    "name": "Uncontrollable Mininuke",
+    "specialInfo": [
+      "Throw this item to spawn an uncontrollable nuke"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "spear",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 2.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:UncontrollableMininuke"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "UncontrollableMininukeProjectileHitsBlock"
+    },
+    "onBulletHitsPlayer": {
+      "name": "UncontrollableMininukeProjectileHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "UncontrollableMininukeProjectileHitsBlock"
+    }
+  }
+}

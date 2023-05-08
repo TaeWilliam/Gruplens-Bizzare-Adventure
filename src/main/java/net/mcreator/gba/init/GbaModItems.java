@@ -17,6 +17,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.gba.item.WarmGlockItem;
+import net.mcreator.gba.item.UncontrollableMininukeItem;
 import net.mcreator.gba.item.TheTeamItem;
 import net.mcreator.gba.item.SverigeItem;
 import net.mcreator.gba.item.SniperentityItem;
@@ -105,6 +106,12 @@ public class GbaModItems {
 	public static final RegistryObject<Item> HORDE = REGISTRY.register("horde", () -> new HordeItem());
 	public static final RegistryObject<Item> PYRO_GUN = REGISTRY.register("pyro_gun", () -> new PyroGunItem());
 	public static final RegistryObject<Item> PYRO_SPAWN_EGG = REGISTRY.register("pyro_spawn_egg", () -> new ForgeSpawnEggItem(GbaModEntities.PYRO, -3407821, -13421569, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> UNCONTROLLABLE_MININUKE = REGISTRY.register("uncontrollable_mininuke", () -> new UncontrollableMininukeItem());
+	public static final RegistryObject<Item> MINE = block(GbaModBlocks.MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> LIGHTNING_MINE = block(GbaModBlocks.LIGHTNING_MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> FURRYMINE = block(GbaModBlocks.FURRYMINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> THE_WORST_MINE = block(GbaModBlocks.THE_WORST_MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> ENGI_MINE = block(GbaModBlocks.ENGI_MINE, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

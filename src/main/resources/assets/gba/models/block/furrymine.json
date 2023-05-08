@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "gba:blocks/none",
+    "up": "gba:blocks/none",
+    "north": "gba:blocks/none",
+    "east": "gba:blocks/none",
+    "south": "gba:blocks/none",
+    "west": "gba:blocks/none",
+    "particle": "gba:blocks/none"
+  },
+  "render_type": "solid"
+}
