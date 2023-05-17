@@ -14,7 +14,7 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": "Items.GOAT_HORN"
+      "value": ""
     },
     "shootConstantly": false,
     "usageCount": 1,

@@ -23,6 +23,10 @@ public class EnidePlayerFinishesUsingItemProcedure {
 		if (entity == null)
 			return;
 		double ide = 0;
+		if (entity instanceof Player _player) {
+			ItemStack _stktoremove = new ItemStack(GbaModItems.ENIDE.get());
+			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+		}
 		ide = Mth.nextInt(RandomSource.create(), 1, 8);
 		if (ide == 1) {
 			if (entity instanceof Player _player) {
@@ -33,11 +37,6 @@ public class EnidePlayerFinishesUsingItemProcedure {
 		} else if (ide == 2) {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
 				_player.displayClientMessage(Component.literal("Hvad mon der vil ske hvis jeg blandede diarrhea og en mystisk spand "), (true));
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(GbaModItems.DIARRHEA_BUCKET.get());
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(GbaModItems.MYSTERIOUS_BUCKET.get());
 				_setstack.setCount(1);

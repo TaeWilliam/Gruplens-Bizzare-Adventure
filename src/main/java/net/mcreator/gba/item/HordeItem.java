@@ -4,8 +4,6 @@ package net.mcreator.gba.item;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ProjectileWeaponItem;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
@@ -56,36 +54,9 @@ public class HordeItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == Items.GOAT_HORN);
-				if (stack == ItemStack.EMPTY) {
-					for (int i = 0; i < entity.getInventory().items.size(); i++) {
-						ItemStack teststack = entity.getInventory().items.get(i);
-						if (teststack != null && teststack.getItem() == Items.GOAT_HORN) {
-							stack = teststack;
-							break;
-						}
-					}
-				}
-				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					HordeEntity entityarrow = HordeEntity.shoot(world, entity, world.getRandom(), 1f, 0, 5);
-					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
-					if (entity.getAbilities().instabuild) {
-						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
-					} else {
-						if (new ItemStack(Items.GOAT_HORN).isDamageableItem()) {
-							if (stack.hurt(1, world.getRandom(), entity)) {
-								stack.shrink(1);
-								stack.setDamageValue(0);
-								if (stack.isEmpty())
-									entity.getInventory().removeItem(stack);
-							}
-						} else {
-							stack.shrink(1);
-							if (stack.isEmpty())
-								entity.getInventory().removeItem(stack);
-						}
-					}
-				}
+				HordeEntity entityarrow = HordeEntity.shoot(world, entity, world.getRandom(), 1f, 0, 5);
+				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
+				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 			}
 		}
 	}
