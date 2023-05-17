@@ -106,7 +106,7 @@
       "value": "CUSTOM:PyroGun"
     },
     "rangedItemType": "Default item",
-    "rangedAttackInterval": 20,
+    "rangedAttackInterval": 40,
     "rangedAttackRadius": 10.0,
     "spawnThisMob": false,
     "doesDespawnWhenIdle": false,

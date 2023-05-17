@@ -61,7 +61,7 @@ public class PyroEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, FurryEntity.class, false, false));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 40, 10f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
